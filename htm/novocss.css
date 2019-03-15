@@ -1,0 +1,2839 @@
+@font-face {
+	font-family: 'Panton-Thin';
+    src: url("//db.onlinewebfonts.com/t/eec0026f5baa00283f60b58ddade3d71.eot");
+    src: url("//db.onlinewebfonts.com/t/eec0026f5baa00283f60b58ddade3d71.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/eec0026f5baa00283f60b58ddade3d71.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/eec0026f5baa00283f60b58ddade3d71.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/eec0026f5baa00283f60b58ddade3d71.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/eec0026f5baa00283f60b58ddade3d71.svg#PantonW01-Thin") format("svg");
+	font-weight: 250;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+000D-FB02
+}
+
+@font-face {
+	font-family: 'Panton-Extra-Light';
+    src: url("//db.onlinewebfonts.com/t/2c4d96722513f205d708f02490c8e41a.eot");
+    src: url("//db.onlinewebfonts.com/t/2c4d96722513f205d708f02490c8e41a.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/2c4d96722513f205d708f02490c8e41a.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/2c4d96722513f205d708f02490c8e41a.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/2c4d96722513f205d708f02490c8e41a.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/2c4d96722513f205d708f02490c8e41a.svg#PantonW01-ExtraLight") format("svg");
+	font-weight: 265;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+000D-FB02
+}
+@font-face {
+	font-family: 'Open-Sans-Extra-Bold';
+    src: url("//db.onlinewebfonts.com/t/8bac22ed4fd7c8a30536be18e2984f84.eot");
+    src: url("//db.onlinewebfonts.com/t/8bac22ed4fd7c8a30536be18e2984f84.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/8bac22ed4fd7c8a30536be18e2984f84.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/8bac22ed4fd7c8a30536be18e2984f84.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/8bac22ed4fd7c8a30536be18e2984f84.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/8bac22ed4fd7c8a30536be18e2984f84.svg#Open Sans Extrabold") format("svg");
+	font-weight: 265;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+000D-FB02
+}
+@font-face {
+	font-family: 'Open-Sans-Semi-Bold';
+    src: url("//db.onlinewebfonts.com/t/33f225b8f5f7d6b34a0926f58f96c1e9.eot");
+    src: url("//db.onlinewebfonts.com/t/33f225b8f5f7d6b34a0926f58f96c1e9.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/33f225b8f5f7d6b34a0926f58f96c1e9.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/33f225b8f5f7d6b34a0926f58f96c1e9.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/33f225b8f5f7d6b34a0926f58f96c1e9.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/33f225b8f5f7d6b34a0926f58f96c1e9.svg#Open Sans Semibold") format("svg");
+	font-weight: 265;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+000D-FB02
+}
+@font-face {
+	font-family: 'Open-Sans';
+    src: url("//db.onlinewebfonts.com/t/629a55a7e793da068dc580d184cc0e31.eot");
+    src: url("//db.onlinewebfonts.com/t/629a55a7e793da068dc580d184cc0e31.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/629a55a7e793da068dc580d184cc0e31.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/629a55a7e793da068dc580d184cc0e31.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/629a55a7e793da068dc580d184cc0e31.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/629a55a7e793da068dc580d184cc0e31.svg#Open Sans") format("svg");
+	font-weight: 265;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+000D-FB02
+}
+@font-face {
+	font-family: 'Panton-Light';
+    src: url("//db.onlinewebfonts.com/t/ca31586b622219a5e23d3eba0aa9f9d8.eot");
+    src: url("//db.onlinewebfonts.com/t/ca31586b622219a5e23d3eba0aa9f9d8.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/ca31586b622219a5e23d3eba0aa9f9d8.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/ca31586b622219a5e23d3eba0aa9f9d8.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/ca31586b622219a5e23d3eba0aa9f9d8.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/ca31586b622219a5e23d3eba0aa9f9d8.svg#PantonW01-Light") format("svg");
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+000D-FB02
+}
+
+@font-face {
+	font-family: 'Panton-Regular';
+    src: url("//db.onlinewebfonts.com/t/15066d43f2e43c9e9294b036264c581a.eot");
+    src: url("//db.onlinewebfonts.com/t/15066d43f2e43c9e9294b036264c581a.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/15066d43f2e43c9e9294b036264c581a.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/15066d43f2e43c9e9294b036264c581a.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/15066d43f2e43c9e9294b036264c581a.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/15066d43f2e43c9e9294b036264c581a.svg#PantonW01-Regular") format("svg");
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+000D-FB02
+}
+
+@font-face {
+	font-family: 'Panton-Semi-Bold';
+    src: url("//db.onlinewebfonts.com/t/d5a58cd8ad7ce7bbe4716dc5b95fb0fb.eot");
+    src: url("//db.onlinewebfonts.com/t/d5a58cd8ad7ce7bbe4716dc5b95fb0fb.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/d5a58cd8ad7ce7bbe4716dc5b95fb0fb.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/d5a58cd8ad7ce7bbe4716dc5b95fb0fb.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/d5a58cd8ad7ce7bbe4716dc5b95fb0fb.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/d5a58cd8ad7ce7bbe4716dc5b95fb0fb.svg#PantonW01-SemiBold") format("svg");
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+000D-FB02
+}
+
+@font-face {
+	font-family: 'Panton-Bold';
+    src: url("//db.onlinewebfonts.com/t/c29c7da47105b2756a2f02e7eb06fd4b.eot");
+    src: url("//db.onlinewebfonts.com/t/c29c7da47105b2756a2f02e7eb06fd4b.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/c29c7da47105b2756a2f02e7eb06fd4b.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/c29c7da47105b2756a2f02e7eb06fd4b.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/c29c7da47105b2756a2f02e7eb06fd4b.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/c29c7da47105b2756a2f02e7eb06fd4b.svg#PantonW01-Bold") format("svg");
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+000D-FB02
+}
+
+@font-face {
+	font-family: 'Panton-Extra-Bold';
+    src: url("//db.onlinewebfonts.com/t/d66e9ac5c7a7dcc79270f6793b8afe49.eot");
+    src: url("//db.onlinewebfonts.com/t/d66e9ac5c7a7dcc79270f6793b8afe49.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/d66e9ac5c7a7dcc79270f6793b8afe49.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/d66e9ac5c7a7dcc79270f6793b8afe49.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/d66e9ac5c7a7dcc79270f6793b8afe49.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/d66e9ac5c7a7dcc79270f6793b8afe49.svg#PantonW01-ExtraBold") format("svg");
+	font-weight: 800;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+000D-FB02
+}
+
+@font-face {
+	font-family: 'Panton-Black';
+    src: url("//db.onlinewebfonts.com/t/0b7fca33145a699f519f99069d8bd7b9.eot");
+    src: url("//db.onlinewebfonts.com/t/0b7fca33145a699f519f99069d8bd7b9.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/0b7fca33145a699f519f99069d8bd7b9.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/0b7fca33145a699f519f99069d8bd7b9.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/0b7fca33145a699f519f99069d8bd7b9.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/0b7fca33145a699f519f99069d8bd7b9.svg#PantonW01-Black") format("svg");
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+000D-FB02
+}
+
+@font-face {
+	font-family: 'Panton-Extra-Black';
+    src: url("//db.onlinewebfonts.com/t/d66e9ac5c7a7dcc79270f6793b8afe49.eot");
+    src: url("//db.onlinewebfonts.com/t/d66e9ac5c7a7dcc79270f6793b8afe49.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/d66e9ac5c7a7dcc79270f6793b8afe49.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/d66e9ac5c7a7dcc79270f6793b8afe49.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/d66e9ac5c7a7dcc79270f6793b8afe49.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/d66e9ac5c7a7dcc79270f6793b8afe49.svg#PantonW01-ExtraBold") format("svg");
+	font-weight: 950;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+000D-FB02
+}
+#root {
+	min-width: 980px;
+	margin: 0 auto;
+	z-index: 0
+}
+
+#header .wrapper,
+#footer .wrapper {
+	clear: both;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	min-width: 980px
+}
+
+#middle {
+	clear: both;
+	display: block;
+	position: relative;
+	zoom: 1;
+	z-index: 0;
+	margin: 10px auto 0;
+	min-width: 980px;
+	min-height: 228px !important
+}
+
+#center {
+	margin: 0 175px 0 190px
+}
+
+#page-produtos-secoes #center {
+	margin: 0 0 0 250px
+}
+
+#page-produtos-pesquisa #center {
+	margin: 0 0 0 250px
+}
+
+#header {
+	clear: both;
+	display: block;
+	position: relative
+}
+
+#footer {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	position: relative
+}
+
+#left {
+	float: left;
+	width: 230px
+}
+
+#right {
+	float: right;
+	width: 165px
+}
+
+#center-footer {
+	width: 100%;
+	float: left
+}
+.fixed-layout #header .wrapper,
+.fixed-layout #footer .wrapper {
+	width: 1100px
+}
+.bloco-beneficios {
+	width: 100%
+}
+
+.bloco-beneficios .blocos {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	-webkit-justify-content: space-between
+}
+
+.bloco-beneficios .blocos .bloco {
+	width: calc(100% / 4)
+}
+
+.bloco-beneficios .blocos .bloco p {
+	font: 14px/16px 'Panton-Extra-Bold';
+	color: #444444;
+	text-transform: uppercase;
+	position: relative;
+	padding-left: 65px
+}
+
+.bloco-beneficios .blocos .bloco p small {
+	display: block;
+	font: 12px/16px 'Panton-Bold'
+}
+
+.bloco-beneficios .blocos .bloco p:before {
+	content: "";
+	width: 53px;
+	height: 44px;
+	display: block;
+	background-size: 53px 44px;
+	-webkit-background-size: 53px 44px;
+	background-repeat: no-repeat;
+	-webkit-background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-position: center center;
+	position: absolute;
+	left: 0;
+	top: -8px
+}
+
+.bloco-beneficios .blocos .bloco p.pagamento:before {
+	-webkit-background-image: url(https://www.rumo.com.br/lojas/00040674/images/card.png);
+	background-image: url(https://www.rumo.com.br/lojas/00040674/images/card.png)
+}
+
+.bloco-beneficios .blocos .bloco p.desconto:before {
+	-webkit-background-image: url(https://www.rumo.com.br/lojas/00040674/images/boleto.png);
+	background-image: url(https://www.rumo.com.br/lojas/00040674/images/boleto.png)
+}
+
+.bloco-beneficios .blocos .bloco p.entrega:before {
+	-webkit-background-image: url(https://www.rumo.com.br/lojas/00040674/images/frete.png);
+	background-image: url(https://www.rumo.com.br/lojas/00040674/images/frete.png)
+}
+
+.bloco-beneficios .blocos .bloco p.retirada:before {
+	-webkit-background-image: url(https://www.rumo.com.br/lojas/00040674/images/loja.png);
+	background-image: url(https://www.rumo.com.br/lojas/00040674/images/loja.png);
+	top: -6px
+}
+
+.objetivos-home {
+	height: 453px;
+	background: #ff8f00;
+	padding-top: 60px;
+	margin-bottom: 150px
+}
+
+.objetivos-home h2 {
+	font: 95px/69px 'Panton-Black';
+	color: rgba(1, 1, 1, 0.1);
+	text-transform: uppercase;
+	text-align: center
+}
+
+.objetivos-home .blocos {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	display: -webkit-flex;
+	-webkit-justify-content: space-between;
+	-webkit-align-items: stretch;
+	position: relative;
+	top: -120px
+}
+
+.objetivos-home .blocos .bloco {
+	width: calc(100% / 4);
+	max-width: 270px;
+	position: relative;
+	bottom: -80px
+}
+
+.objetivos-home .blocos .bloco .imagem {
+	width: 100%;
+	height: 264px;
+	background: url(https://www.rumo.com.br/lojas/00040674/images/back_ban.jpg) center bottom no-repeat;
+	position: relative;
+	padding-top: 100px;
+	box-sizing: initial;
+	text-align: center;
+	z-index: 1
+}
+
+.objetivos-home .blocos .bloco .imagem img {
+	position: absolute;
+	bottom: 0;
+	left: 20px
+}
+
+.objetivos-home .blocos .bloco:last-child .imagem img {
+	bottom: -6px
+}
+
+.objetivos-home .blocos .bloco .imagem:before {
+	content: "";
+	width: 100%;
+	height: 0;
+	background: url(https://www.rumo.com.br/lojas/00040674/images/back_ban_t.png) center center no-repeat;
+	position: absolute;
+	bottom: -50px;
+	left: 0;
+	opacity: 0;
+	transition: all 0.4s linear
+}
+
+.objetivos-home .blocos .bloco:hover .imagem:before {
+	height: 100%;
+	opacity: 1
+}
+
+.objetivos-home .blocos .bloco:hover .titulo {
+	background: #000000
+}
+
+.objetivos-home .blocos .bloco .titulo {
+	height: 80px;
+	text-align: center;
+	background: rgb(255, 69, 10);
+	/* background: -moz-linear-gradient(left, rgba(254, 65, 9, 1) 0%, rgba(255, 123, 25, 1) 100%);
+	background: -webkit-linear-gradient(left, rgba(254, 65, 9, 1) 0%, rgba(255, 123, 25, 1) 100%);
+	background: linear-gradient(to right, rgba(254, 65, 9, 1) 0%, rgba(255, 123, 25, 1) 100%); */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7b19', endColorstr='#da772d', GradientType=1);
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	-webkit-align-items: center;
+	position: relative;
+	z-index: 2
+}
+
+.objetivos-home .blocos .bloco .titulo p {
+	font: 20px/22px 'Panton-Extra-Bold';
+	color: #ffffff;
+	text-transform: uppercase;
+	padding: 0 44px
+}
+
+.objetivos-home .blocos .bloco a:hover {
+	text-decoration: none
+}
+
+.without-right-column #center {
+	margin-right: 1px
+}
+
+.without-right-column #right {
+	display: none
+}
+.more-sections,
+.products .description,
+.products .products-sold,
+.products .products-countdown,
+.products .buttons a.details-quickview {
+	display: none
+}
+
+.layout-1,
+.layout-2,
+.layout-3,
+.layout-4,
+.layout-5,
+.layout-6 {
+	position: relative;
+	margin-bottom: 60px
+}
+
+.layout-1 .legend,
+.layout-2 .legend,
+.layout-3 .legend,
+.layout-4 .legend,
+.layout-5 .legend,
+.layout-6 .legend {
+	clear: both;
+	display: block;
+	border-bottom: 2px solid #000000;
+	margin-bottom: 20px;
+}
+
+.layout-1 .title,
+.layout-2 .title,
+.layout-3 .title,
+.layout-4 .title,
+.layout-5 .title,
+.layout-6 .title {
+	display: block;
+	font: 25px/24px 'Panton-Extra-Bold';
+	color: #444444;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+
+.layout-1 .title a,
+.layout-2 .title a,
+.layout-3 .title a,
+.layout-4 .title a,
+.layout-5 .title a,
+.layout-6 .title a {
+	color: #fff;
+	text-decoration: none
+}
+
+.layout-2 {}
+
+.layout-2 .products li {
+	margin: 0 0 10px 0;
+	padding: 0;
+	min-height: 210px !important
+}
+
+.without-left-column.without-right-column .layout-2 .products li {
+	width: 33%
+}
+
+.without-right-column .layout-2 .products li {
+	width: 50%
+}
+
+.layout-2 .products li .product {
+	display: block;
+	overflow: hidden
+}
+
+.layout-2 .products .product-name {
+	text-align: left;
+	min-height: inherit
+}
+
+.layout-2 .photo {
+	float: left;
+	width: 130px;
+	margin-right: 3%
+}
+
+.layout-2 .photo img {
+	max-width: 130px;
+	max-height: 130px
+}
+
+.layout-2 .product-info {
+	float: left;
+	width: 51%
+}
+
+.layout-2 .buttons {
+	bottom: 0;
+	left: 0;
+	position: relative;
+	width: 100%
+}
+
+.layout-3 {
+	width: 50%;
+	float: left
+}
+
+.layout-3 .content>.products li {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	min-height: inherit !important
+}
+
+.layout-3 .products .product-name {
+	text-align: left;
+	min-height: inherit
+}
+
+.layout-3 .photo {
+	float: left;
+	padding-right: 3%
+}
+
+.layout-3 .photo img {
+	max-width: 150px;
+	max-height: 150px
+}
+
+.layout-3 .product-info {
+	float: left;
+	width: 49%
+}
+
+.layout-3 .buttons {
+	bottom: 0;
+	left: 0;
+	position: relative;
+	width: 100%
+}
+
+.layout-3 .content>.products.see-also li {
+	width: auto !important;
+	min-height: 15px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	font-size: 10px;
+	line-height: 14px;
+	display: block;
+	float: none;
+	text-align: left;
+	border: 0 !important
+}
+
+.layout-3 .see-also li:hover {
+	-webkit-box-shadow: none;
+	box-shadow: none
+}
+
+.layout-3 .see-also-title {
+	font-family: 'Arial';
+	font-weight: bold;
+	font-style: normal;
+	color: #333;
+	font-size: 14px;
+	display: block;
+	padding: 0 20px 8px 20px
+}
+
+.layout-3 ul.see-also {
+	min-height: 62px;
+	padding: 0 20px 20px 20px
+}
+
+.layout-3 .see-also li .price,
+.layout-3 .see-also li .product-name,
+.layout-3 .see-also li .product-name a {
+	display: inline;
+	padding: 0;
+	font-weight: normal;
+	font-size: 11px
+}
+
+.layout-3 .see-also li .price b {
+	font-size: 11px;
+	color: #eb0000
+}
+
+.layout-4 {}
+
+.without-left-column.without-right-column .layout-4 .products li {
+	width: calc(100% / 4);
+	max-width: 260px;
+	padding: 15px
+}
+
+.without-right-column .layout-4 .products li {
+	width: 50%
+}
+
+.layout-4 .product {}
+
+.layout-4 .photo {
+	padding: 0 0 15px 0
+}
+
+.layout-4 .photo img {
+	width: 100%;
+	height: auto;
+	max-height: 280px;
+	max-width: 280px
+}
+
+.layout-5 {
+	width: 100%;
+	float: left
+}
+
+.layout-5 .content {
+	padding: 0
+}
+
+.without-left-column.without-right-column .layout-5 .content {
+	width: 100% !important;
+	padding-bottom: 40px;
+	margin-bottom: -40px;
+	padding-top: 18px;
+	margin-top: -18px
+}
+
+.without-right-column .layout-5 .content {
+	width: 83% !important
+}
+
+.layout-5 .carousel li {
+	height: auto !important;
+	width: 260px !important;
+	min-width: 260px !important;
+	padding: 0;
+	margin-right: 18px;
+	overflow: visible!important
+}
+
+.layout-5 .prev,
+.layout-5 .next {
+	width: 40px;
+	height: 40px;
+	background: #444444;
+	display: block;
+	position: absolute;
+	top: 44%;
+	font-size: 0;
+	text-decoration: none
+}
+
+.layout-5 .prev {
+	left: -52px
+}
+
+.layout-5 .next {
+	right: -50px
+}
+
+.layout-5 .prev:after,
+.layout-5 .next:after {
+	content: "";
+	width: 10px;
+	height: 10px;
+	border: 3.5px solid #ffffff;
+	position: absolute;
+	top: -1px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	transform: rotate(45deg)
+}
+
+.layout-5 .next:after {
+	border-bottom: transparent;
+	border-left: transparent;
+	right: 3.5px
+}
+
+.layout-5 .prev:after {
+	border-top: transparent;
+	border-right: transparent;
+	left: 6.5px
+}
+
+#carousel3D {
+	width: 602px;
+	height: 350px !important;
+	margin: 0 auto
+}
+
+#carousel3D>div {
+	display: block;
+	height: 100%;
+	position: absolute;
+	width: 600px
+}
+
+#carousel3D a img {
+	max-height: 125px;
+	max-width: 125px
+}
+
+.layout-6 .content {
+	position: relative
+}
+
+.layout-6 .cloudcarousel {
+	border: 6px solid #eee;
+	overflow: hidden
+}
+
+.layout-6 a:hover .cloudcarousel {
+	border-color: #ddd
+}
+
+.layout-6 #carousel-box {
+	margin: 0 auto
+}
+
+.cloudcarousel-infos {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	text-align: center
+}
+
+#title-text {
+	text-align: center;
+	width: 100%;
+	font-size: 20px;
+	margin: 0 auto 5px
+}
+
+#alt-text {
+	font-size: 16px;
+	width: 100%;
+	margin: 0 auto
+}
+
+#alt-text .price {
+	text-align: center
+}
+
+#left-but,
+#right-but {
+	position: absolute;
+	top: 44%;
+	font-size: 11px;
+	background: #f1f1f1;
+	border: 0;
+	display: block;
+	text-indent: -9999em;
+	text-decoration: none;
+	background: transparent
+}
+
+#left-but {
+	left: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 15px 15px 15px 0;
+	border-color: transparent #ccc transparent transparent
+}
+
+#right-but {
+	right: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 15px 0 15px 15px;
+	border-color: transparent transparent transparent #ccc
+}
+.fixed-layout #header .wrapper,
+.fixed-layout #footer .wrapper {
+	width: 1100px
+}
+
+.fixed-layout #middle {
+	width: 1100px
+}
+.layout-utilities {
+	margin-bottom: 60px
+}
+
+.layout-utilities .legend {
+	display: none
+}
+
+.layout-utilities ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	flex-wrap: wrap;
+	display: -webkit-flex;
+	-webkit-justify-content: space-between;
+	-webkit-align-items: stretch;
+	-webkit-flex-wrap: wrap
+}
+
+.layout-utilities ul li {
+	list-style: none;
+	margin-bottom: 5px
+}
+
+.layout-utilities ul li img {
+	width: auto;
+	max-width: 100%
+}
+
+footer {
+	width: 100%;
+	display: block;
+	float: left
+}
+
+.footer-1,
+.footer-2,
+.footer-3,
+.footer-4,
+.footer-5 {
+	display: block;
+	clear: both;
+	overflow: hidden;
+	padding: 20px 0
+}
+
+.footer-2,
+.footer-4 {
+	background: #efefef
+}
+
+.footer-5 .boxes {
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -o-flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-o-justify-content: space-between;
+	align-items: flex-start;
+	-webkit-align-items: flex-start;
+	-moz-align-items: flex-start;
+	-o-align-items: flex-start;
+}
+
+.footer-5.footer-area {
+	padding: 40px 0
+}
+
+.carousel-marcas .legend {
+	width: 100%;
+	display: block
+}
+
+.carousel-marcas .legend:after {
+	content: "";
+	width: 100%;
+	height: 2px;
+	display: block;
+	background: rgb(255, 69, 10);
+	background: -moz-linear-gradient(left, rgba(254, 65, 9, 1) 0%, rgba(255, 123, 25, 1) 100%);
+	background: -webkit-linear-gradient(left, rgba(254, 65, 9, 1) 0%, rgba(255, 123, 25, 1) 100%);
+	background: linear-gradient(to right, rgba(254, 65, 9, 1) 0%, rgba(255, 123, 25, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe4109', endColorstr='#ff7b19', GradientType=1);
+	float: left
+}
+
+.carousel-marcas .legend p {
+	font: 25px/24px 'Panton-Extra-Bold';
+	color: #444444;
+	text-transform: uppercase;
+	float: left
+}
+
+.carousel-marcas .legend a {
+	width: 120px;
+	height: 40px;
+	font: 14px/44px 'Panton-Bold';
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	float: right;
+	background: rgb(255, 69, 10);
+	background: -moz-linear-gradient(left, rgba(254, 65, 9, 1) 0%, rgba(255, 123, 25, 1) 100%);
+	background: -webkit-linear-gradient(left, rgba(254, 65, 9, 1) 0%, rgba(255, 123, 25, 1) 100%);
+	background: linear-gradient(to right, rgba(254, 65, 9, 1) 0%, rgba(255, 123, 25, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe4109', endColorstr='#ff7b19', GradientType=1);
+	background-position: 0 0;
+	position: relative;
+	top: -15px
+}
+
+.carousel-marcas .legend a:hover {
+	text-decoration: none;
+	background-position: 120px 0
+}
+
+.footer-area .legend .title {
+	font: 18px/18px 'Panton-Extra-Bold';
+	color: #ff5f00;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	letter-spacing: 0.2px;
+	display: block
+}
+
+.brands {
+	clear: both;
+	background: #fff
+}
+
+.brands .header,
+.brands .icon,
+.brands .legend,
+.brands .footer {
+	display: none
+}
+
+.brands .content {
+	width: 100% !important;
+	height: 130px;
+	padding: 20px 0;
+	margin: 0 auto;
+	overflow: hidden
+}
+
+.brands ul {
+	list-style: none
+}
+
+.brands li {
+	width: 220px;
+	height: 88px;
+	float: left;
+	text-align: center;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: -webkit-flex;
+	-webkit-justify-content: center;
+	-webkit-align-items: center
+}
+
+.brands li img {
+	width: 90%!important;
+	height: auto;
+	filter: grayscale(100%)
+}
+
+.brands .prev,
+.brands .next {
+	width: 40px;
+	height: 40px;
+	background: #444444;
+	position: absolute;
+	top: 100px;
+	font-size: 0;
+	text-decoration: none;
+	z-index: 9
+}
+
+.brands .prev {
+	left: -60px
+}
+
+.brands .next {
+	right: -60px
+}
+
+.brands .prev:after,
+.brands .next:after {
+	content: "";
+	width: 10px;
+	height: 10px;
+	border: 3.5px solid #ffffff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	transform: rotate(45deg)
+}
+
+.brands .prev:after {
+	border-top: transparent;
+	border-right: transparent;
+	left: 6.5px
+}
+
+.brands .next:after {
+	border-bottom: transparent;
+	border-left: transparent;
+	right: 3.5px
+}
+
+.products li .product {
+	display: block
+}
+
+.products .product-name {
+	display: block;
+	font-size: 12px;
+	color: #191919;
+	min-height: 57px;
+	padding: 0 0 0 0;
+	margin: 0 20px;
+	width: calc(100% - 40px);
+	max-height: 100px;
+	min-height: 87px;
+	overflow: hidden
+}
+
+.products .product-name a {
+	font: 16px/19px 'Panton-Extra-Bold';
+	color: #444444;
+	min-height: 58px;
+	max-height: 100px;
+	display: block
+}
+
+.products .brand {
+	display: block;
+	font-size: 13px;
+	color: #191919;
+	padding: 0 0 0 0;
+	margin-top: 5px
+}
+
+.products .brand b {
+	display: none
+}
+
+.products .brand a {
+	font-size: 13px;
+	font-family: 'Panton-Extra-Bold';
+	text-transform: uppercase;
+	color: #444444;
+	padding-bottom: 15px
+}
+
+.products .photo {
+	display: block;
+	position: relative;
+	padding: 40px 0 18px;
+	text-align: center
+}
+
+.products .photo img {
+	width: 100%;
+	height: auto
+}
+
+.products .rating {
+	display: none;
+	margin: 0 0 10px 0
+}
+
+.products li:hover {
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.3)
+}
+
+#page-produtos-secoes .products li {
+	width: calc(94% / 3);
+	margin-bottom: 65px
+}
+
+#page-produtos-pesquisa .products li {
+	width: calc(94% / 3);
+	margin-bottom: 65px
+}
+
+.products .buttons {
+	display: block;
+	clear: both
+}
+
+.products .buttons a.details {
+	display: none;
+	float: left;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	color: #FFF;
+	background-color: #ff6c52;
+	border-bottom: 3px solid rgba(0, 0, 0, 0.20);
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0)
+}
+
+.products li:hover .buttons a.details {
+	opacity: 1;
+	-moz-opacity: 1;
+	filter: alpha(opacity=100)
+}
+
+.products .buttons a.details b {
+	position: relative;
+	display: block;
+	color: #fff;
+	padding: 0 20px 0 35px;
+	font-size: 14px;
+	line-height: 30px;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.20)
+}
+
+.products .buttons a.details b:before {
+	content: "\f067";
+	position: absolute;
+	top: 0;
+	left: 10px;
+	font-size: 18px;
+	font-family: 'FontAwesome';
+	font-weight: normal;
+	font-style: normal;
+}
+
+.products .buttons a.buy {
+	width: calc(100% + 2px);
+	height: 55px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	position: absolute;
+	bottom: -56px;
+	left: -1px;
+	background: #00a900
+}
+
+.products .buttons a.buy b {
+	font: 18px/55px 'Panton-Extra-Bold';
+	position: relative;
+	display: block;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.5px
+}
+
+.products li:hover .buttons a.buy {
+	opacity: 1;
+	-moz-opacity: 1;
+	filter: alpha(opacity=100)
+}
+
+.products .buttons a.details-quickview {
+	display: none;
+	float: left;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	color: #FFF;
+	background-color: #ff6c52;
+	border-bottom: 3px solid rgba(0, 0, 0, 0.20);
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0)
+}
+
+.products li:hover .buttons a.details-quickview {
+	opacity: 1;
+	-moz-opacity: 1;
+	filter: alpha(opacity=100)
+}
+
+.products .buttons a.details-quickview b {
+	position: relative;
+	display: block;
+	color: #fff;
+	padding: 0 20px 0 35px;
+	font-size: 14px;
+	line-height: 30px;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.20)
+}
+
+.products .buttons a.details-quickview b:before {
+	content: "\f07a";
+	position: absolute;
+	top: 0;
+	left: 10px;
+	font-size: 18px;
+	font-family: 'FontAwesome';
+	font-weight: normal;
+	font-style: normal;
+}
+
+.more-sections,
+.products .description,
+.products .products-sold,
+.products .products-countdown,
+.products .buttons a.details-quickview {
+	display: none
+}
+
+.products {
+	list-style: none
+}
+
+.products li a {
+	text-decoration: none
+}
+
+.products li {
+	position: relative;
+	display: block;
+	float: left;
+	width: 94%;
+	margin: 0 25px 20px 0;
+	border: 1px solid #d1d1d1;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.products3 {
+	position: relative;
+	display: block;
+	float: left;
+	width: 25%;
+	margin: 0 25px 20px 0;
+	border: 1px solid #d1d1d1;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.products li:nth-child(3n+3) {
+	margin-right: 0
+}
+
+.associations .products li {
+	width: 23%;
+	margin: 0 25px 20px 0
+}
+
+.associations .products li:nth-child(3n+3) {
+	margin: 0 25px 20px 0
+}
+
+.associations .products li:nth-child(4n+4) {
+	margin-right: 0
+}
+
+.products li .product {
+	display: block
+}
+
+.products .product-name {
+	display: block;
+	font-size: 12px;
+	color: #191919;
+	min-height: 57px;
+	padding: 0 0 0 0;
+	margin: 0 20px;
+	width: calc(100% - 40px);
+	max-height: 100px;
+	min-height: 87px;
+	overflow: hidden
+}
+
+.products .product-name a {
+	font: 16px/19px 'Panton-Extra-Bold';
+	color: #444444;
+	min-height: 58px;
+	max-height: 100px;
+	display: block
+}
+
+.products .brand {
+	display: block;
+	font-size: 13px;
+	color: #191919;
+	padding: 0 0 0 0;
+	margin-top: 5px
+}
+
+.products .brand b {
+	display: none
+}
+
+.products .brand a {
+	font-size: 13px;
+	font-family: 'Panton-Extra-Bold';
+	text-transform: uppercase;
+	color: #444444;
+	padding-bottom: 15px
+}
+
+.products .photo {
+	display: block;
+	position: relative;
+	padding: 40px 0 18px;
+	text-align: center
+}
+
+.products .photo img {
+	width: 100%;
+	height: auto
+}
+
+.products .rating {
+	display: none;
+	margin: 0 0 10px 0
+}
+
+.products li:hover {
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.3)
+}
+
+#page-produtos-secoes .products li {
+	width: calc(94% / 3);
+	margin-bottom: 65px
+}
+
+#page-produtos-pesquisa .products li {
+	width: calc(94% / 3);
+	margin-bottom: 65px
+}
+
+.products .buttons {
+	display: block;
+	clear: both
+}
+
+.products .buttons a.details {
+	display: none;
+	float: left;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	color: #FFF;
+	background-color: #ff6c52;
+	border-bottom: 3px solid rgba(0, 0, 0, 0.20);
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0)
+}
+
+.products li:hover .buttons a.details {
+	opacity: 1;
+	-moz-opacity: 1;
+	filter: alpha(opacity=100)
+}
+
+.products .buttons a.details b {
+	position: relative;
+	display: block;
+	color: #fff;
+	padding: 0 20px 0 35px;
+	font-size: 14px;
+	line-height: 30px;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.20)
+}
+
+.products .buttons a.details b:before {
+	content: "\f067";
+	position: absolute;
+	top: 0;
+	left: 10px;
+	font-size: 18px;
+	font-family: 'FontAwesome';
+	font-weight: normal;
+	font-style: normal;
+}
+
+.products .buttons a.buy {
+	width: calc(100% + 2px);
+	height: 55px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	position: absolute;
+	bottom: -56px;
+	left: -1px;
+	background: #00a900
+}
+
+.products .buttons a.buy b {
+	font: 18px/55px 'Panton-Extra-Bold';
+	position: relative;
+	display: block;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.5px
+}
+
+.products li:hover .buttons a.buy {
+	opacity: 1;
+	-moz-opacity: 1;
+	filter: alpha(opacity=100)
+}
+
+.products .buttons a.details-quickview {
+	display: none;
+	float: left;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	color: #FFF;
+	background-color: #ff6c52;
+	border-bottom: 3px solid rgba(0, 0, 0, 0.20);
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0)
+}
+
+.products li:hover .buttons a.details-quickview {
+	opacity: 1;
+	-moz-opacity: 1;
+	filter: alpha(opacity=100)
+}
+
+.products .buttons a.details-quickview b {
+	position: relative;
+	display: block;
+	color: #fff;
+	padding: 0 20px 0 35px;
+	font-size: 14px;
+	line-height: 30px;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.20)
+}
+
+.products .buttons a.details-quickview b:before {
+	content: "\f07a";
+	position: absolute;
+	top: 0;
+	left: 10px;
+	font-size: 18px;
+	font-family: 'FontAwesome';
+	font-weight: normal;
+	font-style: normal;
+}
+
+.more-sections,
+.products .description,
+.products .products-sold,
+.products .products-countdown,
+.products .buttons a.details-quickview {
+	display: none
+}
+
+.save {
+	display: none;
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto
+}
+
+.save .saveTitle,
+.save .savePrice {
+	display: none
+}
+
+.save .savePercentage {
+	font: 16px/18px 'Open-Sans-Extra-Bold';
+	color: #ff5f00;
+	text-transform: uppercase
+}
+
+.price {
+	position: relative;
+	display: block;
+	font-size: 12px;
+	text-align: left
+}
+
+.price b {
+	font-family: 'Arial';
+	font-weight: bold;
+	font-style: normal;
+}
+
+.price em b,
+.price em dfn {
+	font-family: 'Arial';
+	font-weight: bold;
+	font-style: normal;
+	color: #eb0000
+}
+
+.price i {
+	font-style: normal
+}
+
+.price br {
+	display: none
+}
+
+.price del {
+	font: 13px/14px 'Open-Sans';
+	display: block;
+	font-style: normal;
+	color: #888;
+	text-decoration: none
+}
+
+.price del b.list {
+	margin-right: 3px;
+	text-decoration: line-through
+}
+
+.price em {
+	display: block;
+	font-style: normal
+}
+
+.price em b {
+	font-size: 14px
+}
+
+.price dfn {
+	font: 14px/14px 'Open-Sans';
+	display: block;
+	font-style: normal;
+	letter-spacing: -0.5px;
+	margin-top: 5px;
+	color: #777777
+}
+
+.price dfn b {
+	font-family: 'Open-Sans-Bold'
+}
+
+.price small {
+	display: block;
+	font-style: normal;
+	padding-bottom: 6px
+}
+
+.price small.savings {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	text-align: left;
+	font: 16px/18px 'Open-Sans-Extra-Bold';
+	color: #ff5f00
+}
+
+.price small.savings span {
+	display: block;
+	font: 12px/18px 'Open-Sans-Semi-Bold';
+	color: #777777
+}
+
+.price .no-interest {
+	display: none
+}
+
+.products li .price {
+	position: relative;
+	display: block;
+	padding: 0 20px;
+	width: 100%;
+	float: left;
+	margin: 0
+}
+
+.products li .price i {
+	font: 13px/14px 'Open-Sans'
+}
+
+.products li .price em b {
+	font: 13px 'Open-Sans-Extra-Bold';
+	color: #777777;
+	position: relative
+}
+
+.products .price .no-interest {
+	display: inline-block
+}
+
+.products li .price dfn b {
+	font: 13px 'Open-Sans-Extra-Bold';
+	color: #777777;
+	position: relative
+}
+
+.products li .price dfn b.parcel-value {
+	display: block
+}
+
+.products li .price dfn b.parcel-value .no-interest {
+	font-family: 'Open-Sans';
+	margin-left: 2px
+}
+
+.products .price del b.list {
+	margin-right: 0;
+	font-family: 'Open-Sans'
+}
+
+.products .price small.savings {
+	border-top: 1px solid #c7c7c7;
+	float: left;
+	margin-top: 10px;
+	padding-top: 10px;
+	line-height: 10px;
+	padding-bottom: 19px;
+	height: auto
+}
+
+#price-product-248 .savings {
+	margin-top: 10px !important;
+	padding-top: 10px !important;
+	margin-bottom: -20px;
+	text-align: right
+}
+
+#page-popup-produto-variacao .title {
+	margin-top: 5px
+}
+
+.products li .desconto {
+	position: absolute;
+	right: 18px;
+	bottom: 19px;
+	font-family: 'Open-Sans-Extra-Bold';
+	font-size: 23px;
+	color: #ff5f00;
+	text-transform: uppercase;
+	letter-spacing: -0.5px
+}
+
+.products .price dfn {
+	display: inline-block;
+	width: 55%;
+	float: right;
+	text-align: right;
+	margin-top: 0
+}
+
+.products .price del {
+	display: inline-block;
+	width: 43%;
+	float: left;
+	font-size: 13px;
+	line-height: 18px
+}
+
+.products .price em {
+	display: inline-block
+}
+
+.products li .price em b {
+	display: inline-block
+}
+
+.purchase-info {
+	position: relative
+}
+
+.purchase-info .price {
+	display: block
+}
+
+.purchase-info .price .save {
+	display: none;
+	right: 0
+}
+
+.purchase-info .price del {
+	font-size: 15px;
+	font-family: 'Open-Sans';
+	color: #777777
+}
+
+.purchase-info .price del i,
+.purchase-info .price del b {
+	font-size: 15px;
+	font-family: 'Open-Sans';
+	color: #777777;
+	font-weight: normal
+}
+
+.purchase-info .price {
+	position: relative;
+	min-height: 125px;
+	line-height: 26px
+}
+
+.purchase-info .price em {
+	font-size: 15px;
+	font-family: 'Open-Sans';
+	color: #777777
+}
+
+.purchase-info .price em b {
+	font-size: 15px;
+	font-family: 'Open-Sans-Bold';
+	color: #777777
+}
+
+.purchase-info .price em br {
+	display: block
+}
+
+.purchase-info .price dfn {
+	font-size: 15px;
+	font-family: 'Open-Sans';
+	color: #777777;
+	font-weight: normal;
+	border-bottom: 1px solid #dcdcdc;
+	padding-bottom: 22px
+}
+
+.purchase-info .price dfn i {
+	font-size: 14px;
+	font-family: 'Open-Sans';
+	color: #777777;
+	font-weight: normal
+}
+
+.purchase-info .price dfn .no-interest {
+	font-size: 14px
+}
+
+.purchase-info .price dfn b {
+	font-size: 15px;
+	font-family: 'Open-Sans-Bold';
+	color: #777777
+}
+
+.purchase-info .price dfn .no-interest {
+	display: inline
+}
+
+.purchase-info .price small.savings {
+	font-size: 0;
+	padding: 0;
+	width: 100%;
+	margin: 20px 0 0;
+	font-family: 'Open-Sans';
+	color: #777777;
+	position: absolute!important;
+	bottom: -9px;
+	top: initial;
+	right: 0;
+	height: 20px;
+	left: initial
+}
+
+.purchase-info.semdesconto .price small.savings {
+	bottom: 3px
+}
+
+.purchase-info small.savijs {
+	font-size: 11px;
+	padding: 0;
+	position: absolute;
+	bottom: 38px;
+	left: 20px;
+	font-family: 'Open-Sans';
+	color: #777777;
+	text-align: center
+}
+
+.purchase-info small.savijs b {
+	display: block;
+	font-family: 'Open-Sans-Extra-Bold';
+	color: #ff5f00;
+	font-size: 16px
+}
+
+.purchase-info .price b:first-child {
+	position: absolute;
+	right: 0;
+	left: initial;
+	top: initial;
+	bottom: 0;
+	font-family: 'Open-Sans-Extra-Bold';
+	font-size: 28px;
+	color: #ff5f00;
+	text-transform: uppercase
+}
+
+#buytogether-v2 .price del,
+#buytogether-v2 .price em,
+#buytogether-v2 .price dfn,
+#buytogether-v2 .price small {
+	padding: 0
+}
+
+#buytogether-v2 .price em {
+	font-size: 14px
+}
+
+#buytogether-v2 .price em b {
+	display: block;
+	font-size: 28px;
+	font-family: 'Open-Sans-Bold';
+	color: #ff5f00;
+	text-align: center;
+	text-transform: uppercase
+}
+
+#buytogether-v2 .price small {
+	font-size: 12px
+}
+
+#buytogether-v2 .price small b {}
+
+#product-kit .kit-produtct-item .price del,
+#product-kit .kit-produtct-item .price em,
+#product-kit .kit-produtct-item .price dfn,
+#product-kit .kit-produtct-item .price small {
+	padding: 0
+}
+
+#variations>fieldset>div.content {
+	padding: 0
+}
+
+.grid-price-variation {
+	margin: 5px auto;
+	padding: 5px 0;
+	border-top: 1px solid #F3F3F3;
+	border-bottom: 1px solid #F3F3F3
+}
+
+.grid-price-variation .legend {
+	margin-bottom: 10px
+}
+
+.grid-price-variation .content {
+	padding: 0;
+	clear: both;
+	overflow: hidden
+}
+
+.entry-variation {
+	clear: both;
+	position: relative;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc
+}
+
+.label-grid-variation {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	outline: 0;
+	z-index: 9;
+	text-indent: -99999em
+}
+
+.entry-variation input.type-text {
+	height: 30px;
+	width: 30px;
+	padding: 1px 5px
+}
+
+.grid-price-variation .icon-variation {
+	float: left
+}
+
+.grid-price-variation .icon-variation img {
+	max-width: 50px;
+	max-height: 50px
+}
+
+.grid-price-variation .check-itens {}
+
+.grid-price-variation .check-itens input {
+	position: absolute
+}
+
+.grid-price-variation .check-itens .radio-var {
+	right: 32px
+}
+
+.grid-price-variation .check-itens .type-var {
+	right: 0;
+	width: 20px
+}
+
+.grid-price-variation .price-variation {
+	margin: 0 20px 0 58px
+}
+
+.grid-price-variation .price-variation .variation-title {
+	display: block
+}
+
+.grid-price-variation .price-variation .price {}
+
+.grid-price-variation .price-variation .price del,
+.grid-price-variation .price-variation .price em,
+.grid-price-variation .price-variation .price dfn,
+.grid-price-variation .price-variation .price small {
+	font-size: 10px;
+	padding: 0
+}
+
+#page-produtos #interactivity .entry-variation .input-error-global {
+	margin: 0 !important
+}
+
+#interactivity {
+	position: relative;
+	float: right;
+	width: 52%;
+	background: #fff
+}
+
+#media {
+	position: relative;
+	overflow: hidden;
+	float: left;
+	width: 50%;
+	max-width: 500px;
+	background: #fff;
+	text-align: center
+}
+
+#media .labels {
+	top: 10px
+}
+
+#media .labels .label {
+	float: left;
+	margin: 0 6px
+}
+
+#media .labels .label:first-child {
+	margin-left: 12px
+}
+
+#media .media-wrapper {
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 58px 0 37px 5px;
+	border: 1px solid #dcdcdc
+}
+
+#interactivity-wrapper {
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	z-index: 1;
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	justify-content: space-between;
+	-webkit-justify-content: space-between
+}
+
+.product-contents {
+	overflow: hidden;
+	margin-bottom: 20px
+}
+
+.botoes-content {
+	width: 100%;
+	padding-top: 30px;
+	margin-top: 35px;
+	border-top: 1px solid #c7c7c7;
+	display: flex;
+	justify-content: space-between
+}
+
+.botoes-content a {
+	width: 48%;
+	height: 55px;
+	background: #cccccc;
+	border: 0;
+	border-radius: 0;
+	text-shadow: none
+}
+
+.botoes-content a:hover {
+	background: #444444
+}
+
+.botoes-content a b {
+	font: 16px/55px 'Panton-Bold';
+	color: #ffffff;
+	background: transparent;
+	display: inline-block;
+	padding: 0;
+	border-radius: 0;
+	border: 0
+}
+
+.botoes-content a:hover b {
+	color: #ffffff
+}
+
+.botoes-content a b span {
+	margin-right: 10px;
+	position: relative;
+	top: 3px
+}
+
+.botoes-content #payments b span {
+	display: inline-block;
+	width: 25px;
+	height: 18px;
+	-webkit-background-image: url(/files/_img/layout/svg/cartao.svg);
+	background-image: url(/files/_img/layout/svg/cartao.svg);
+	background-size: 25px 18px;
+	-webkit-background-size: 25px 18px;
+	background-repeat: no-repeat;
+	-webkit-background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-position: center center
+}
+
+.botoes-content #shipping b span {
+	display: inline-block;
+	width: 27px;
+	height: 20px;
+	-webkit-background-image: url(/files/_img/layout/svg/cfrete.svg);
+	background-image: url(/files/_img/layout/svg/cfrete.svg);
+	background-size: 27px 20px;
+	-webkit-background-size: 27px 20px;
+	background-repeat: no-repeat;
+	-webkit-background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-position: center center
+}
+
+.botoes-content #payments {
+	order: 1
+}
+
+.botoes-content #shipping {
+	order: 2
+}
+
+#page-produtos strong.keyword {
+	font-weight: normal
+}
+
+#page-produtos .component-group .to-top {
+	display: none
+}
+
+.product-description {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	margin-bottom: 10px
+}
+
+.product-description dl {
+	overflow: hidden
+}
+
+.product-description dt {
+	font: 24px/28px 'Panton-Extra-Bold';
+	color: #444444;
+	margin-bottom: 10px
+}
+
+.product-description dd.description {
+	display: none
+}
+
+.product-description dd.even,
+.product-description dd.odd {
+	float: left;
+	width: 100%;
+	color: #666;
+	margin-bottom: 5px
+}
+
+.product-description dd.availability,
+.product-description dd.category {
+	display: none
+}
+
+.product-description dd.brand {
+	font: 14px/18px 'Panton-Regular';
+	color: #444444;
+	text-transform: uppercase;
+	margin-top: 10px
+}
+
+.product-description dd.brand b {
+	font-family: 'Panton-Extra-Bold'
+}
+
+dd.product-rating {
+	display: block;
+	width: 100%;
+	margin-bottom: 0;
+	margin-top: 0;
+	float: left
+}
+
+dd.product-rating .legend {
+	display: block;
+	width: 100%;
+	position: relative;
+	height: 81px;
+	border-bottom: 1px solid #cccccc
+}
+
+dd.product-rating .legend h2 {
+	font-size: 25px;
+	font-family: 'Panton-Extra-Bold';
+	color: #ff5f00;
+	text-transform: uppercase;
+	float: left;
+	margin-top: 34px
+}
+
+dd.product-rating .legend .rate-this-product {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 280px;
+	height: 60px;
+	line-height: 60px;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: 'Panton-Extra-Bold';
+	font-size: 18px;
+	text-align: center;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	background: rgb(255, 69, 10);
+	background: -moz-linear-gradient(left, rgba(255, 69, 10, 1) 0%, rgba(255, 122, 27, 1) 100%);
+	background: -webkit-linear-gradient(left, rgba(255, 69, 10, 1) 0%, rgba(255, 122, 27, 1)) 100%);
+	background: linear-gradient(to right, rgba(255, 69, 10, 1) 0%, rgba(255, 122, 27, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff420a ', endColorstr='#ff7a1b', GradientType=1);
+	background-position: 0 0
+}
+
+dd.product-rating .legend .rate-this-product:hover {
+	text-decoration: none;
+	background-position: 280px 0
+}
+
+dd.product-rating .review-content .description .btn-avalie {
+	color: #fe480b;
+	cursor: pointer
+}
+
+dd.product-rating .review-content .description .btn-avalie:hover {
+	text-decoration: underline
+}
+
+#page-popup-comentario p.rating-msg {
+	font-size: 13px;
+	font-weight: bolder;
+	color: #f60;
+	float: left
+}
+
+#page-popup-comentario div.input-error-global {
+	display: none !important
+}
+
+.component-group #comments-rating {
+	display: block;
+	width: 100%;
+	margin-bottom: 90px;
+	float: left;
+	margin-top: 40px
+}
+
+.component-group #comments-rating .legend {
+	display: block;
+	width: 100%;
+	position: relative;
+	height: 81px;
+	border-bottom: 1px solid #cccccc
+}
+
+.component-group #comments-rating .legend h2 {
+	font-size: 25px;
+	font-family: 'Panton-Extra-Bold';
+	color: #ff5f00;
+	text-transform: uppercase;
+	float: left;
+	margin-top: 34px
+}
+
+.component-group #comments-rating .legend #LinkRating {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 280px;
+	height: 60px;
+	line-height: 60px;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: 'Panton-Extra-Bold';
+	font-size: 18px;
+	text-align: center;
+	border: none;
+	border-radius: 0;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	background: rgb(255, 69, 10);
+	background: -moz-linear-gradient(left, rgba(255, 69, 10, 1) 0%, rgba(255, 122, 27, 1) 100%);
+	background: -webkit-linear-gradient(left, rgba(255, 69, 10, 1) 0%, rgba(255, 122, 27, 1)) 100%);
+	background: linear-gradient(to right, rgba(255, 69, 10, 1) 0%, rgba(255, 122, 27, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff420a ', endColorstr='#ff7a1b', GradientType=1);
+	background-position: 0 0
+}
+
+.component-group #comments-rating .legend #LinkRating b {
+	line-height: 60px;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: 'Panton-Extra-Bold';
+	font-size: 18px;
+	text-align: center;
+	width: 100%;
+	float: left;
+	background: none
+}
+
+.component-group #comments-rating .legend #LinkRating:hover {
+	text-decoration: none;
+	background-position: 280px 0
+}
+
+#interactivity a#more-info {
+	display: none;
+	text-decoration: underline
+}
+
+#media .product-photos {
+	display: block;
+	float: left;
+	width: 100%
+}
+
+#media .product-photos.variations {
+	display: none
+}
+
+.without-left-column.without-right-column #media .product-photos {
+	width: 55px;
+	margin-right: 5px;
+	display: none
+}
+
+#media .product-photos ul {
+	list-style: none;
+	overflow: hidden;
+	text-align: center
+}
+
+#media .product-photos li {
+	display: block;
+	float: left;
+	margin: 0 3px 5px 0;
+	padding: 4px;
+	line-height: 10px;
+	cursor: pointer;
+	vertical-align: middle;
+	border: 1px solid #ccc;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.without-left-column.without-right-column #media .product-photos li {
+	float: inherit;
+	margin: 0 0 5px 0
+}
+
+#media .product-photos li:hover,
+#media .product-photos li.selected {
+	border-color: #2794fd
+}
+
+#media .product-photos img {
+	max-width: 45px;
+	max-height: 45px;
+	margin: 0;
+	vertical-align: middle
+}
+
+#a-zoom {
+	margin: 0 auto;
+	display: inline-block;
+	width: auto;
+	height: auto;
+	cursor: move !important
+}
+
+.img-wrapper {}
+
+.img-wrapper #zoom-wrapper {}
+
+#media .media-actions {
+	display: block;
+	clear: both;
+	display: none;
+	padding: 10px 0
+}
+
+#media .media-actions br,
+#media .media-actions .zoom {
+	display: none
+}
+
+#media .media-actions a.btn-alt {
+	margin: 0 5px
+}
+
+.purchase-info {
+	width: 48%;
+	border: 1px solid #dcdcdc;
+	padding: 22px 20px 32px 20px;
+	height: 201px
+}
+
+.purchase-info.semdesconto {
+	padding-top: 36px
+}
+
+.purchase-info .price small.savings {
+	position: relative
+}
+
+.variations label:after {
+	content: attr(title);
+	display: block
+}
+
+.product-service {
+	display: none
+}
+
+.product-service .content {}
+
+.product-service a {}
+
+.product-service a span {
+	display: none
+}
+
+.product-service span.review,
+.product-service span.reviews {
+	display: none
+}
+
+.product-service span.questions,
+.product-service span.recommendations,
+.product-service span.lists {
+	padding-right: 10px
+}
+
+.product-service span a:before {
+	content: "";
+	color: #00a900;
+	font-family: 'FontAwesome';
+	font-weight: normal;
+	font-style: normal;
+}
+
+.product-service span.questions a:before {
+	content: "\f059"
+}
+
+.product-service span.recommendations a:before {
+	content: "\f005"
+}
+
+.product-service span.lists a:before {
+	content: "\f004"
+}
+
+#interactivity form.validate {
+	width: 48%;
+	display: block;
+	clear: both;
+	float: right
+}
+
+.purchase-toolbar {
+	display: block
+}
+
+.purchase-toolbar .content {
+	position: relative
+}
+
+.purchase-toolbar .btn-container {
+	display: block;
+	overflow: hidden
+}
+
+.purchase-toolbar .btn-container button#btn-buy {
+	width: 100%;
+	max-height: 60px;
+	opacity: 1;
+	background: #00a900;
+	text-indent: 0
+}
+
+.purchase-toolbar .btn-container button#btn-buy b {
+	font: 20px/60px 'Panton-Extra-Bold';
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 0.5px
+}
+
+.purchase-toolbar a#shipping.btn-alt {
+	position: absolute;
+	bottom: 0;
+	left: 150px
+}
+
+.purchase-toolbar a#payments.btn-alt {
+	position: absolute;
+	bottom: 0;
+	left: 0
+}
+
+.purchase-toolbar a#shipping.btn-alt b,
+.purchase-toolbar a#payments.btn-alt b {}
+
+.purchase-toolbar input.shipping-cep {
+	position: absolute;
+	bottom: 0;
+	left: 280px
+}
+
+.purchase-toolbar #payments span,
+.purchase-toolbar #shipping span {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	padding-right: 3px
+}
+
+.purchase-toolbar #payments span:before {
+	content: "\f155";
+	font-family: 'FontAwesome';
+	font-weight: normal;
+	font-style: normal;
+}
+
+.purchase-toolbar #shipping span:before {
+	content: "\f0d1";
+	font-family: 'FontAwesome';
+	font-weight: normal;
+	font-style: normal;
+}
+
+#product-social-networks {
+	display: none
+}
+
+#product-social-networks .legend {
+	display: none
+}
+
+.list-style .tab-toolbar,
+.tab-style .legend {
+	display: none
+}
+
+.informations-wrapper {
+	position: relative;
+	margin: 15px 0
+}
+
+.information-toolbar {
+	display: none
+}
+
+.tab-toolbar {
+	width: 100%;
+	display: block;
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 20px
+}
+
+.informations-wrapper .tab-style .tab-toolbar a {
+	width: calc(100% / 5);
+	max-width: 200px;
+	height: 60px;
+	font: 16px/60px 'Panton-Bold';
+	color: #444444;
+	display: inline-block;
+	padding: 0;
+	margin: 0 25px 0 0;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 1px solid #cccccc;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.informations-wrapper .tab-style .tab-toolbar a:last-child {
+	margin-right: 0
+}
+
+.informations-wrapper .tab-style .tab-toolbar a b {
+	font: 16px/60px 'Panton-Bold';
+	display: block;
+	width: 100%
+}
+
+.informations-wrapper .tab-style .tab-toolbar a:hover,
+.informations-wrapper .tab-style .tab-toolbar a.selected {
+	color: #ffffff;
+	background: rgb(255, 69, 10);
+	background: -moz-linear-gradient(left, rgba(255, 69, 10, 1) 0%, rgba(255, 122, 27, 1) 100%);
+	background: -webkit-linear-gradient(left, rgba(255, 69, 10, 1) 0%, rgba(255, 122, 27, 1)) 100%);
+	background: linear-gradient(to right, rgba(255, 69, 10, 1) 0%, rgba(255, 122, 27, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff420a ', endColorstr='#ff7a1b', GradientType=1);
+	border: 0
+}
+
+.information-descriptions {
+	display: block;
+	padding: 20px 0;
+	background: #fff
+}
+
+.information-descriptions li {
+	font-size: 15px!important;
+	font-family: 'Open-Sans'!important
+}
+
+.information-descriptions li div {
+	font-size: 15px!important;
+	font-family: 'Open-Sans'!important
+}
+
+.information-descriptions li span,
+.information-descriptions li p {
+	font-size: 15px!important;
+	font-family: 'Open-Sans'!important;
+	line-height: 23px!important;
+	text-align: initial!important
+}
+
+.information-descriptions a {
+	font-size: 15px!important;
+	font-family: 'Open-Sans'!important;
+	line-height: 23px!important;
+	text-align: initial!important
+}
+
+.information-descriptions li span strong a {
+	font-size: 15px!important;
+	font-family: 'Open-Sans-Bold'!important
+}
+
+.information-descriptions strong {
+	font-size: 15px!important;
+	font-family: 'Open-Sans-Bold'!important
+}
+
+.information-descriptions>ul {
+	list-style: none
+}
+
+.information-descriptions>ul>li {}
+
+.information-descriptions h3.info-title {
+	display: none;
+	font-size: 18px;
+	padding: 10px 0 5px 0
+}
+
+.information-descriptions .info-description {
+	line-height: 18px;
+	font-size: 13px
+}
+
+.information-descriptions .info-description ul {
+	padding: 0 20px
+}
+
+.information-descriptions .info-description ol {
+	padding: 0 20px
+}
+
+#shopping-points {
+	display: block;
+	clear: both;
+	overflow: hidden;
+	background: #EEE;
+	padding: 10px;
+	font-size: 12px;
+	margin-bottom: 10px
+}
+
+#shopping-points .title {
+	display: block;
+	float: left;
+	text-align: right;
+	padding: 0 8px 0 0
+}
+
+#shopping-points .content {
+	display: block;
+	float: left
+}
+
+#shopping-points .content b {
+	color: #eb0000
+}
+
+#page-produtos strong.keyword {
+	margin-left: 0 !important;
+	display: inline !important;
+	width: auto !important
+}
+
+#product-questions,
+.associations,
+#buytogether-v2 {
+	clear: both;
+	position: relative;
+	display: block;
+	margin: 15px 0;
+	background: #fff
+}
+
+#product-questions .legend,
+.associations .legend,
+#buytogether-v2 .legend {
+	clear: both;
+	display: block;
+	border-bottom: 2px solid #444444;
+	margin-bottom: 20px;
+}
+
+#product-questions .title,
+.associations .title,
+#buytogether-v2 .title {
+	display: block;
+	font: 25px/24px 'Panton-Extra-Bold';
+	color: #444444;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+
+#product-questions .header,
+.associations .header,
+#buytogether-v2 .header {}
+
+#product-questions .icon,
+.associations .icon,
+#buytogether-v2 .icon {}
+
+#product-questions .content,
+#comments-rating .content,
+#buytogether-v2 .content,
+.associations .content {
+	clear: both;
+	padding: 10px 0 0 0
+}
+
+#product-questions .content ul,
+.associations .content ul,
+#buytogether-v2 .content ul {
+	list-style: none
+}
+
+.associations.buy-also .content {
+	float: left;
+	width: 100%
+}
+
+.associations.buy-also .content ul {
+	float: left;
+	width: 100%;
+	padding-bottom: 60px
+}
+
+#product-questions .footer,
+.associations .footer,
+#buytogether-v2 .footer {}
+
+.associations .to-top {
+	display: none
+}
+
+#page-produtos #middle #left {
+	display: none
+}
+
+#page-produtos #middle #center {
+	margin: 0
+}
+
+@keyframes hvr-buzz-out {
+	10% {
+		-webkit-transform: translateX(3px) rotate(2deg);
+		transform: translateX(3px) rotate(2deg)
+	}
+	20% {
+		-webkit-transform: translateX(-3px) rotate(-2deg);
+		transform: translateX(-3px) rotate(-2deg)
+	}
+	30% {
+		-webkit-transform: translateX(3px) rotate(2deg);
+		transform: translateX(3px) rotate(2deg)
+	}
+	40% {
+		-webkit-transform: translateX(-3px) rotate(-2deg);
+		transform: translateX(-3px) rotate(-2deg)
+	}
+	50% {
+		-webkit-transform: translateX(2px) rotate(1deg);
+		transform: translateX(2px) rotate(1deg)
+	}
+	60% {
+		-webkit-transform: translateX(-2px) rotate(-1deg);
+		transform: translateX(-2px) rotate(-1deg)
+	}
+	70% {
+		-webkit-transform: translateX(2px) rotate(1deg);
+		transform: translateX(2px) rotate(1deg)
+	}
+	80% {
+		-webkit-transform: translateX(-2px) rotate(-1deg);
+		transform: translateX(-2px) rotate(-1deg)
+	}
+	90% {
+		-webkit-transform: translateX(1px) rotate(0);
+		transform: translateX(1px) rotate(0)
+	}
+	100% {
+		-webkit-transform: translateX(-1px) rotate(0);
+		transform: translateX(-1px) rotate(0)
+	}
+}
+
+.hvr-buzz-out {
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale
+}
+
+.hvr-buzz-out.active {
+	-webkit-animation-name: hvr-buzz-out;
+	animation-name: hvr-buzz-out;
+	-webkit-animation-duration: 0.75s;
+	animation-duration: 0.75s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear
+}
+
+#interactivity-wrapper>div.product-description.component>div.content>dl>dd.odd.contains>p {
+	display: none
+}
+
+#page-produtos #buytogether-v2 {
+	margin-top: 30px
+}
+
