@@ -1,0 +1,646 @@
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<!-- Includes CSS -->
+<link rel="stylesheet" href="/wave/v3/wavemin.css?cccfc=1">
+<script>FCLib$.loadAsyncCSS('<PathTo file="htm/css/jquery_ui.css">');</script>
+<link rel="stylesheet" href="<PathTo file="htm/novocss.css">">
+	<!--[if IE]><style type="text/css">.ui-autocomplete-category{margin-top: -2px}</style><![endif]-->
+	<!-- Includes Javascript -->
+	<script src='<PathTo file="htm/jurosparcelas.js">'></script>
+	<script src='<PathTo file="htm/lojalib.js">'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+	<script src='<PathTo file="htm/js/autosuggesttbar.js">'></script>
+	<script src='<PathTo file="htm/js/autosuggest.js">'></script>
+	<script src='<PathTo file="htm/js/scrolltothetop.js">'></script>
+	<script src='<PathTo file="htm/js/tinynav.js">'></script>
+<script>
+var iItensCesta=<QtdCesta>;
+var iQtdProds=0;
+ImgLoadingFC=FC$.PathImg+"loading.gif?cccfc=1"; //loading da autopaginação
+ImgOnError=FC$.PathImg+"nd";
+FCLib$.LazyLoadWaitImage=FC$.PathImg+"loading-lazy-load.gif?cccfc=1"; //loading usado no lazy load
+</script>
+
+<!-- Begin: Toolbar -->
+<div class="FCToolBar">
+  <div class="FCToolBarContainer">
+    <a href="<StoreDomain>"><div class="FCToolBarLogo"><img alt="<NomeLoja>" src="<PathTo file="images/logotopo.png">"></div></a>
+    <a href="<url-categories>" class="HeaderMenuToolbarFC"><span class="HeaderMenuULIconFC HeaderMenuCatDepFC"><img64 src="<BaseLoja>images/iconcat.svg" plain="true" width="18" height="18"></span> <Categorias></a>
+    
+    <form name="TopSearchToolbarForm" id="autocomplete-form-toolbar" class="FCToolBarForm" method="GET" action="<url-prod>">
+    <input type="hidden" name="<par-typed>" value="true">
+    <input type="text" id="autocomplete-toolbar" value="" name="<par-text>" class="InputTextBusca ui-autocomplete-input" placeholder="Digite sua busca aqui" autocomplete="off">
+    <a href="#search" onclick="sF$.fnSearchToolbarSubmit(document.TopSearchToolbarForm);" class="btn1 btn-sent FCToolBarButton"><span class="HeaderSerachIMGIconFC"><img64 src="<BaseLoja>images/iconsearch.svg" plain="true" width="25" height="25" alt="Buscar" title="Buscar"></span></a>
+    </form>
+
+    <span class="FCToolBarChatTel">
+      <a href="#" style="float:left;" class=""><img64 src="<BaseLoja>images/iconcomphone.svg" plain="true" width="20" height="20"></a>
+      <p><CompanyPhone></p>
+    </span>
+
+    <div class="HeaderCartMainFC ToolBarCart">
+      <a href="<url-add-product>">
+        <div class="HeaderCartMainIconFC">
+          <img64 src="<Baseloja>images/iconshopcart.svg" plain="true" width="35" height="35">
+        </div>
+      </a>
+      <a href="<url-add-product>">
+        <div class="HeaderCartMainItemTotalFC">
+          <div id="HeaderCartItemFC"><span id="idCartItemsToolTop">0</span> item(s)</div>
+          <div id="HeaderCartTotalFC"><span id="idCartTotalToolTop">R$ 0,00</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+<script>
+  FCLib$.onReady(function(){
+    var w=jQuery(window).width();w>1024&&ToolbarCartExec();
+  }); 
+</script>
+<!-- End: Toolbar -->
+
+<!-- Begin: Logo|Menu|Search|Cart -->
+<div class="MainContainer">
+  <div class="row FullSpaceFC">
+    <div class="col-small-12 col-medium-3 col-large-3 col-xlarge-3 text-medium-left text-large-left text-xlarge-left">
+      <a href="<StoreDomain>"><img alt="<NomeLoja>" title="<NomeLoja>" src="<PathTo file="images/logotopo.png">" class="HeaderLogo"></a>
+    </div>
+    <div class="col-small-12 col-medium-6 col-large-6 col-xlarge-6">
+      <div class="HeaderMenuOneFC hide-small">
+        <ul>
+          <li class="header-menu-display"><a href="<url-account>?register=1#Register">Meu cadastro</a></li>
+          <li><a href="<url-account>?orders=1#Orders">Meus pedidos</a></li>
+          <li class="header-menu-display"><a href="<url-contact>">Contato</a></li>
+          <li class="header-menu-shopping-list"><a href="/lista-de-compra" rel="nofollow"><img64 src="<BaseLoja>images/product-list.svg" width="22" height="22" plain="true">Lista de compra</a></li>
+          <li class="header-menu-wishlist"><a href="<url-account>?wishlist=1#Wishlist" rel="nofollow"><img64 src="<BaseLoja>images/product-wishlist.svg" width="22" height="22" plain="true">Lista de desejos</a></li>
+        </ul>
+      </div>
+      <form name="TopSearchForm" method="GET" id="autocomplete-form" action="<url-prod>">
+        <input type="hidden" name="<par-typed>" value="true">
+	<div class="HeaderSearchFC">
+	  <div id="DivSearch" class="collapse">
+	    <div class="col-small-9 col-medium-9 col-large-9 col-xlarge-9">
+	      <input type="text" id="autocomplete" value="<SearchText>" name="<par-text>" class="InputTextBusca" placeholder="Digite sua busca aqui">
+	    </div>
+	    <div class="col-small-3 col-medium-3 col-large-3 col-xlarge-3 speech">
+              <a href="#search" class="btn1 btn-sent HeaderIconSearchButtonFC">
+                <img class="header-speech-icon" id="voiceSearch" onclick="sF$.fnStartDictation()" src="<BaseLoja>images/icon-speech.svg?cccfc=1" width="30" height="30" alt="Fale" />
+                <span class="HeaderSerachIMGIconFC" onclick="sF$.fnSearchSubmit(document.TopSearchForm);"><img id="voiceSearchMGlass" src="<BaseLoja>images/iconsearch.svg" width="25" height="25" alt="Buscar" title="Buscar"></span>
+              </a>
+            </div>
+	  </div>
+	</div>
+      </form>
+      <div class="MainConatiner HeaderSocialLogin-position hide-small">
+        <div class="col-small-12 col-medium-9 col-large-12 col-xlarge-12">
+          <ul class="HeaderContainerSocialLoginUL">
+          <li class="HeaderContainerSocialLoginIconUser"><img id="UserImage" src="<PathTo file="images/iconuser.svg">" width="20" height="20" alt="Login usuário">&nbsp;</li>
+          <li class="HeaderContainerSocialLoginPosition" id="Header_SocialLogin_NamePosition"><span class="loginInfo"></span></li>
+          <li class="HeaderContainerSocialLoginGlobalSingIcons">&nbsp;<span id="idImgGlobalSignFC"></span></li>
+          </ul>         
+        </div>
+      </div>
+    </div>
+    <!-- Begin Cart -->
+    <div class="col-small-12 col-medium-3 col-large-3 col-xlarge-3 hide-small">
+      <div class="HeaderCartMainFC">
+        <a style="cursor:pointer;" onclick="Cart$.fnShowCartCheckout();">
+          <div class="HeaderCartMainIconFC">
+            <img64 src="<BaseLoja>images/iconshopcart.svg" plain="true" width="35" height="35">
+          </div>
+        </a>
+        <a style="cursor:pointer;" onclick="Cart$.fnShowCartCheckout();">
+          <div class="HeaderCartMainItemTotalFC">
+            <div id="HeaderCartItemFC"><span id="idCartItemsTop"></span> item(s)</div>
+            <div id="HeaderCartTotalFC"><span id="idCartTotalTop"></span></div> 
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- End Cart -->
+  </div> 
+</div>
+<!-- End: Logo|Menu|Search|Cart -->
+
+<!-- Begin Social Login User -->
+<div class="MainContainer HeaderSocialLoginPosition">
+  <div class="row">
+    <div class="col-medium-3 col-large-3 col-xlarge-3"></div>
+    <div class="col-small-12 col-medium-8 col-large-6 col-xlarge-6">
+    
+    </div>
+    <div class="col-medium-1 col-large-3 col-xlarge-3"></div>
+  </div>
+</div>
+<!-- End Social Login User -->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> <!--for Bootstrap CDN version-->
+    <!--or for Bootstrap local/server version: <link href="MegaNavbar/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+
+  
+  <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!--for Font Awesome CDN version-->
+    <!--or for Font Awesome local/server version: <link href="MegaNavbar/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+<link rel="stylesheet" href="<PathTo file="htm/MegaNavbar.css">">
+
+<link rel="stylesheet" title="inverse" href="<PathTo file="htm/navbar-inverse.css">">
+<link rel="stylesheet" title="inverse" href="<PathTo file="htm/animation.css">" >
+
+    <!-- jQuery JavaScript CDN version (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--or for jQuery JavaScript local/server version: <script src="MegaNavbar/assets/plugins/jquery-1.11.1.min.js"></script>  -->
+
+    <!-- Latest compiled and minified Bootstrap JavaScript CDN version -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<!-- MENU INICIO -->
+	<style>
+@media (min-width: 768px) {
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-nav > li {
+    float: none;
+    display: inline-block;
+  }
+  .navbar-nav > li.navbar-right {
+    float: right !important;
+  }
+}
+</style>
+<nav class="navbar navbar-inverse-orange menu-lg" role="navigation">
+ <div class="container-fluid">
+  <div class="navbar-header">
+    
+   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#amazon_style">
+     <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+   </button>
+  </div>
+  <div class="collapse navbar-collapse" id="amazon_style">
+   <ul class="nav navbar-nav">
+    <li class="dropdown am_style">
+		<!-- MENU-CATEGORIAS -->
+      <a data-toggle="dropdown" href="javascript:void(0);" class="dropdown-toggle"><i class="fa fa-shopping-cart"></i> <span class="hidden-sm hidden-md reverse">CATEGORIAS</span><span class="caret"></span></a>
+     <ul class="dropdown-menu no-border-radius no-shadow">
+      <!-- Electronics & Computers -->
+
+ 
+
+
+
+
+      <li class="dropdown-right-onhover no-fix">
+        <a href="javascript:void(0);" data-toggle="collapse" data-target="#bags_cases" class="dropdown-toggle collapsed">EMAGRECIMENTO</a>
+       <div class="dropdown-menu collapse no-border-radius no-shadow" id="bags_cases">
+        <img src="https://www.rumo.com.br/lojas/00040674/images/women_bag.png" alt='' style="position:absolute;bottom: -46px;right: -15px;width: 241px;height: 400px;"/>
+        <ul class="col-md-6 col-sm-6">
+         <li class="dropdown-header">
+          EMAGRECIMENTO
+         </li>
+         <li>
+          <a href="javascript:void(0);">Bloqueador de gordura</a>
+         </li>
+         <li>
+          <a href="javascript:void(0);">Diurético Natural</a>
+         </li>
+         <li>
+          <a href="javascript:void(0);">L-Carnitina</a>
+         </li>
+         <li>
+          <a href="javascript:void(0);">Termogênico</a>
+         </li>
+        </ul>
+       </div>
+      </li>
+      
+      <li class="dropdown-right-onhover no-fix">
+        <a href="javascript:void(0);" data-toggle="collapse" data-target="#bags_cases" class="dropdown-toggle collapsed">ENERGIA</a>
+       <div class="dropdown-menu collapse no-border-radius no-shadow" id="bags_cases">
+        <img src="https://www.rumo.com.br/lojas/00040674/images/women_bag.png" alt='' style="position:absolute;bottom: -46px;right: -15px;width: 241px;height: 400px;"/>
+        <ul class="col-md-6 col-sm-6">
+         <li class="dropdown-header">
+          ENERGIA
+         </li>
+         <li>
+          <a href="javascript:void(0);">Carboidrato</a>
+         </li>
+         <li>
+          <a href="javascript:void(0);">Gel energético</a>
+         </li>
+         <li>
+          <a href="javascript:void(0);">Recovery</a>
+         </li>
+        </ul>
+       </div>
+      </li>
+	  
+	        <li class="dropdown-right-onhover no-fix">
+        <a href="javascript:void(0);" data-toggle="collapse" data-target="#bags_cases" class="dropdown-toggle collapsed">FORÇA</a>
+       <div class="dropdown-menu collapse no-border-radius no-shadow" id="bags_cases">
+        <img src="https://www.rumo.com.br/lojas/00040674/images/women_bag.png" alt='' style="position:absolute;bottom: -46px;right: -15px;width: 241px;height: 400px;"/>
+        <ul class="col-md-6 col-sm-6">
+         <li class="dropdown-header">
+          FORÇA
+         </li>
+         <li>
+          <a href="javascript:void(0);">Albumina</a>
+         </li>
+         <li>
+          <a href="javascript:void(0);">Hipercalórico</a>
+         </li>
+         <li>
+          <a href="javascript:void(0);">Pré-Hormonal</a>
+         </li>
+         <li>
+          <a href="javascript:void(0);">Pré-Treino</a>
+         </li>
+		  <li class="dropdown-header">
+          Aminoácidos
+         </li>
+		          <li>
+          <a href="javascript:void(0);">BCAA e HMB</a>
+         </li>
+		          <li>
+          <a href="javascript:void(0);">Creatina</a>
+         </li>
+		          <li>
+          <a href="javascript:void(0);">Glutamina</a>
+         </li>
+		 		  <li class="dropdown-header">
+          Proteína
+         </li>
+		 		          <li>
+          <a href="javascript:void(0);">Barras de Proteína</a>
+         </li>
+		 		          <li>
+          <a href="javascript:void(0);">Caseína</a>
+         </li>
+		 		          <li>
+          <a href="javascript:void(0);">Proteína da carne</a>
+         </li>
+		 		          <li>
+          <a href="javascript:void(0);">Proteína Vegetal</a>
+         </li>
+		 		  <li class="dropdown-header">
+          Whey Protein
+         </li>
+		 <li>
+          <a href="javascript:void(0);">Whey Protein Concentrada</a>
+         </li>
+		 <li>
+          <a href="javascript:void(0);">Whey Protein Hidrolisada</a>
+         </li>
+		 <li>
+          <a href="javascript:void(0);">Whey Protein Isolada</a>
+         </li>
+        </ul>
+       </div>
+      </li>
+	  
+	  <li class="dropdown-right-onhover no-fix">
+        <a href="javascript:void(0);" data-toggle="collapse" data-target="#bags_cases" class="dropdown-toggle collapsed">SAÚDE</a>
+       <div class="dropdown-menu collapse no-border-radius no-shadow" id="bags_cases">
+        <img src="https://www.rumo.com.br/lojas/00040674/images/women_bag.png" alt='' style="position:absolute;bottom: -46px;right: -15px;width: 241px;height: 400px;"/>
+        <ul class="col-md-6 col-sm-6">
+         <li class="dropdown-header">
+          SAÚDE
+         </li>
+         <li>
+          <a href="javascript:void(0);">Pasta de amendoim</a>
+         </li>
+         <li>
+          <a href="javascript:void(0);">Vitaminas e Minerais</a>
+         </li>
+         <li class="dropdown-header">
+          Funcionais
+         </li>
+		          <li>
+          <a href="javascript:void(0);">Articulações</a>
+         </li>
+		          <li>
+          <a href="javascript:void(0);">Colágeno</a>
+         </li>
+		          <li>
+          <a href="javascript:void(0);">Enzimas</a>
+         </li>
+		 <li>
+          <a href="javascript:void(0);">Ômegas e EFA</a>
+         </li>
+        </ul>
+       </div>
+      </li>
+	  
+	  	  <li class="dropdown-right-onhover no-fix">
+        <a href="javascript:void(0);" data-toggle="collapse" data-target="#bags_cases" class="dropdown-toggle collapsed">ACESSÓRIOS</a>
+       <div class="dropdown-menu collapse no-border-radius no-shadow" id="bags_cases">
+        <img src="https://www.rumo.com.br/lojas/00040674/images/women_bag.png" alt='' style="position:absolute;bottom: -46px;right: -15px;width: 241px;height: 400px;"/>
+        <ul class="col-md-6 col-sm-6">
+         <li class="dropdown-header">
+          ACESSÓRIOS
+         </li>
+         <li>
+          <a href="javascript:void(0);">Coqueteleiras e Cia</a>
+         </li>
+         <li>
+          <a href="javascript:void(0);">Corporal</a>
+         </li>
+        </ul>
+       </div>
+      </li>
+	  
+	  	
+     </ul>
+    </li>
+	
+		<!-- MENU-OUTLET -->
+
+							<li class="dropdown-grid">
+      <a data-toggle="dropdown" href="javascript:void(0);" id="ddmedia" class="dropdown-toggle"><i class="fa fa-tasks"></i> <span class="hidden-sm hidden-md reverse">OUTLET</span><span class="caret"></span></a>
+     <div class="dropdown-grid-wrapper" role="menu">
+      <ul class="dropdown-menu col-xs-12 col-sm-9 col-md-8 col-lg-7">
+       <li>
+        <div id="carousel-eg" class="carousel slide">
+         <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 divided">
+           <ol class="carousel-indicators navbar-carousel-indicators h-divided">
+            <li data-target="#carousel-eg" class="active">
+             <a href="javascript:void(0);">Cars<span class="hidden-sm hidden-xs desc">Cars description</span></a>
+            </li>
+            <li data-target="#carousel-eg">
+             <a href="javascript:void(0);">Animals<span class="hidden-sm hidden-xs desc">Slide with caption</span></a>
+            </li>
+            <li data-target="#carousel-eg">
+             <a href="javascript:void(0);">Nature<span class="hidden-sm hidden-xs desc">Nature description</span></a>
+            </li>
+            <li data-target="#carousel-eg">
+             <a href="javascript:void(0);">City<span class="hidden-sm hidden-xs desc">City description</span></a>
+            </li>
+            <li data-target="#carousel-eg">
+             <a href="javascript:void(0);">Video<span class="hidden-sm hidden-xs desc">Video description</span></a>
+            </li>
+           </ol>
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+           <div class="carousel-inner">
+            <div class="item active">
+             <div class="embed-responsive embed-responsive-16by9">
+              <img class="embed-responsive-item" src="https://tudo.extra.com.br/imagens/2014/12/suplementos-no-extra.jpg" alt="megamenu navigation" />
+             </div>
+            </div>
+            <div class="item">
+             <div class="embed-responsive embed-responsive-16by9">
+              <img class="embed-responsive-item" src="https://tudo.extra.com.br/imagens/2014/12/suplementos-no-extra.jpg" alt="navigation megamenu" />
+              <div class="carousel-caption">
+               <h3>
+                The Eurasian eagle-owl
+               </h3>
+               <p>
+                (Bubo bubo) is a species of eagle-owl resident in much of Eurasia. It is sometimes called the European eagle-owl
+               </p>
+              </div>
+             </div>
+            </div>
+            <div class="item">
+             <div class="embed-responsive embed-responsive-16by9">
+              <img class="embed-responsive-item" src="https://tudo.extra.com.br/imagens/2014/12/suplementos-no-extra.jpg" alt="horizontal megamenu" />
+             </div>
+            </div>
+            <div class="item">
+             <div class="embed-responsive embed-responsive-16by9">
+              <img class="embed-responsive-item" src="https://tudo.extra.com.br/imagens/2014/12/suplementos-no-extra.jpg" alt="horizontal mega menu" />
+             </div>
+            </div>
+            <div class="item">
+             <div class="embed-responsive embed-responsive-16by9">
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </li>
+      </ul>
+     </div>
+    </li>
+	
+	
+		<!-- MENU-LOJA FISICA -->
+
+	     <li class="dropdown-full no-border-radius no-shadow">
+       <a data-toggle="dropdown" href="javascript:;" class="dropdown-toggle"><i class="fa fa-gift"></i> LOJAS FISICAS<span class="caret"></span></a>
+      <div class="dropdown-menu col-xs-8 col-sm-8">
+       <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+         <h5>
+          Conheça nossas lojas físicas
+         </h5>
+         <ul class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <li>
+           <a href="#"><i class="fa fa-trophy"></i> dresses</a>
+          </li>
+          <li>
+           <a href="#"><i class="fa fa-trophy"></i> sweaters</a>
+          </li>
+          <li>
+           <a href="#"><i class="fa fa-trophy"></i> swimwear</a>
+          </li>
+          <li>
+           <a href="#"><i class="fa fa-trophy"></i> outerwear</a>
+          </li>
+          <li>
+           <a href="#"><i class="fa fa-trophy"></i> leggings</a>
+          </li>
+          <li>
+           <a href="#"><i class="fa fa-trophy"></i> intimates</a>
+          </li>
+          <li>
+           <a href="#"><i class="fa fa-trophy"></i> loungewear</a>
+          </li>
+          <li>
+           <a href="#"><i class="fa fa-trophy"></i> loungewear</a>
+          </li>
+         </ul>
+         <ul class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <li>
+           <a href="#"><i class="fa fa-trophy"></i> blazers</a>
+          </li>
+          <li>
+           <a href="#"><i class="fa fa-trophy"></i> jackets</a>
+          </li>
+          <li>
+           <a href="#"><i class="fa fa-trophy"></i> shorts</a>
+          </li>
+          <li>
+           <a href="#"><i class="fa fa-trophy"></i> skirts</a>
+          </li>
+          <li>
+           <a href="#"><i class="fa fa-trophy"></i> suiting</a>
+          </li>
+          <li>
+           <a href="#"><i class="fa fa-trophy"></i> sleepwear</a>
+          </li>
+          <li>
+           <a href="#"><i class="fa fa-trophy"></i> activewear</a>
+          </li>
+          <li>
+           <a href="#"><i class="fa fa-trophy"></i> activewear</a>
+          </li>
+         </ul>
+        </div>
+      
+        <div class="col-lg-6">
+         <ul>
+          <li>
+		  <link rel="stylesheet" type="text/css" href="/js/MagicToolbox/MagicScrollV2/magicscroll.css">
+<script type="text/javascript" src="/js/MagicToolbox/MagicScrollV2/magicscroll.js"></script>
+
+
+           <div id="myCarousel3" class="carousel slide">
+            <div class="carousel-inner">
+             <div class="item active">
+               <a href="#"><img class="img-responsive no-padding col-xs-12" alt="product 1" src="https://www.juicysantos.com.br/wp-content/uploads/2017/06/nutrafit-1.jpg" style="opacity: 1;"></a>
+            
+             </div>
+             <!-- End Item -->
+
+             <div class="item">
+               <a href="#"><img class="img-responsive no-padding  col-xs-12" alt="product 2" src="http://placehold.it/254x144/ef5e55/f5f5f5/&amp;text=New+Collection" style="opacity: 1;"></a>
+             </div>
+             <!-- End Item -->
+
+             <div class="item">
+               <a href="#"><img class="img-responsive no-padding  col-xs-12" alt="product 3" src="http://placehold.it/254x144/2ecc71/f5f5f5/&amp;text=New+Collection" style="opacity: 1;"></a>
+              <h4>
+               <small>Denin jacket stamped</small>
+              </h4> 
+              <button class="btn btn-success" type="button">
+               <i class="fa fa-shopping-cart"></i> 49,99 ?
+              </button> 
+              <button class="btn btn-default  pull-right" type="button">
+               <i class="fa fa-plus"></i> <span class="hidden-sm">Add</span> to Wishlist
+              </button>
+             </div>
+             <!-- End Item -->
+
+            </div>
+            <!-- End Carousel Inner -->
+
+           </div>
+           <!-- /.carousel -->
+
+          </li>
+
+
+         </ul>
+        </div>
+       </div>
+      </div>
+     </li>
+						
+						
+						
+
+	<!-- MENU-CONTATO -->
+							<li class="dropdown-grid">
+      <a data-toggle="dropdown" href="javascript:void(0);" id="ddmedia" class="dropdown-toggle"><i class="fa fa-envelope"></i> CONTATO</span><span class="caret"></span></a>
+     <div class="dropdown-grid-wrapper" role="menu">
+      <ul class="dropdown-menu col-xs-8col-sm-9">
+       <li class="">
+        							<h3 style="padding-top:0px; border-bottom: 1px solid #e6e6e6;"><i class="fa fa-envelope"></i> Contato</h3>
+        								<br>
+        								<strong>RTH COMERCIO DE SUPLEMENTOS</strong><br>
+CNPJ: 26.530.583/0001-56<br>
+Rua Barão de Jaceguai, 1365 - Campo Belo<br>
+São Paulo - SP<br><br>
+
+contato@nutrafitsuplementos.com.br<br>
+
+<i class="fa fa-phone fa-2" aria-hidden="true"></i> (11) 5515-6028<br>
+<i class="fa fa-whatsapp" aria-hidden="true"></i> (11) 98845-0804<br>
+
+<i class="fa fa-instagram fa-2" aria-hidden="true"></i> nutrafitoficial<br>
+        						</li>
+      </ul>
+     </div>
+    </li>
+   </ul>
+  </div>
+ </div>
+</nav>
+
+<style>@media (min-width: 768px) {
+  .am_style>.dropdown-menu .dropdown-menu {width: 474px;}
+}
+@media (min-width: 992px) {
+  .am_style>.dropdown-menu .dropdown-menu {width: 500px;}
+}
+
+@media (max-width: 767px) {
+  .am_style>.dropdown-menu .dropdown-menu img {
+    top: 0!important;
+    right: 15px!important;
+    width: initial!important;
+    height: 100%!important;
+    bottom: initial!important;}
+}
+
+@media (min-width: 768px) {
+  .am_style>.dropdown-menu .dropdown-menu {min-height: 401px; margin-left: 0!important; margin-top: -1px!important; padding: 15px!important;}
+  .am_style>.dropdown-menu>li {position:static!important;}
+  .am_style>.dropdown-menu>li>.dropdown-toggle {position:relative;}
+  .am_style>.dropdown-menu {border-top: none; min-width: 194px; padding-top: 10px!important; padding-bottom: 10px!important;}
+  .navbar .am_style .dropdown-menu li.dropdown-header {padding-left: 0px; padding-right: 0px; color: #e47911;}
+  .am_style .dropdown-menu li:hover>a {background-color: transparent!important; color: #e47911!important; }
+  .am_style .dropdown-menu .dropdown-menu li>a {background-color: transparent!important; padding-top: 1px; padding-bottom: 1px;}
+  .am_style .dropdown-menu .dropdown-menu li:hover>a {font-weight: bold; }
+
+
+  #clothing_shoes_jewelry {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+2,dae0e5+100 */
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(255,255,255,1) 2%, rgba(218,224,229,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(2%,rgba(255,255,255,1)), color-stop(100%,rgba(218,224,229,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 2%,rgba(218,224,229,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(255,255,255,1) 2%,rgba(218,224,229,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(255,255,255,1) 2%,rgba(218,224,229,1) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(255,255,255,1) 2%,rgba(218,224,229,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dae0e5',GradientType=1 ); /* IE6-9 */
+
+  }
+
+  #bags_cases {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,fcfcfc+56,cccccc+100 */
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(255,255,255,1) 0%, rgba(252,252,252,1) 56%, rgba(204,204,204,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(56%,rgba(252,252,252,1)), color-stop(100%,rgba(204,204,204,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(252,252,252,1) 56%,rgba(204,204,204,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(252,252,252,1) 56%,rgba(204,204,204,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(252,252,252,1) 56%,rgba(204,204,204,1) 100%); /* IE10+ */
+background: linear-gradient(135deg,  rgba(255,255,255,1) 0%,rgba(252,252,252,1) 56%,rgba(204,204,204,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  }
+
+}
+</style>
+
+<!-- FIM MENU -->
+
+
+<!-- Receive Banner Home -->
+<div id="FC-ShowHomeBanners"></div>
+<!-- End Banner Home -->
+
+<div class="FullSpaceFC"></div>
+
+<script>
+  FCLib$.onReady(function(){MobileMenuClick();});
+</script>
+
+<!-- Begin Aside BarraEsquerda.htm - Close Rodape.htm - Don't remove -->
+<div id="root" class="fixed-layout chrome chrome71 r1680 ready">
+<header>
+  <div id="header">
