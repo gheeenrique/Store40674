@@ -1,52 +1,236 @@
-<!-- sidebar -->
-<div class="sidebar-container">
-  <div class="sidebar-close-container">
-    <img src="<PathTo file="images/ampclose.svg">" width="20" height="20" class="amp-sidebar-btn-close">
-  </div>
-  <nav class="amp-nav">
-    <a href="<PathAMP url="/">"><img64 src="<BaseLoja>images/amp-home.svg" plain="true" width="24" height="24" title="Home"> Home</a>
-    <a href="<PathAMP url="<url-release>">"><img64 src="<BaseLoja>images/amp-new-releases.svg" plain="true" width="24" height="24" title="Lançamentos"> Lançamentos</a>
-    <a href="<PathAMP url="<url-sale>">"><img64 src="<BaseLoja>images/amp-offers.svg" plain="true" width="24" height="24" title="Promoções">Promoções</a>
-    <a href="<url-advanced-search>"><img64 src="<BaseLoja>images/amp-search.svg" plain="true" width="25" height="25" title="Buscar"> Busca detalhada</a>
-  </nav>
-  <div class="amp-cats">
-    <a href="<PathAMP url="<url-categories>">" class="amp-link-cats"><Categorias></a>
-    <ListPathCat out="13" id="-1">
-  </div>
-</div>
-<div class="sidebar-mask"></div>
-<!-- end sidebar -->
+<html lang="pt-br">
 
+<head>
+    <meta charset="ISO-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NutraFit</title>
+        <link type="text/css" rel="stylesheet" href="https://idelhost.com.br/nutra-apagar/css/lojasite.css">
+      <link type="text/css" rel="stylesheet" href="https://idelhost.com.br/nutra-apagar/teste/platform.css">
+      <link type="text/css" rel="stylesheet" href="https://idelhost.com.br/nutra-apagar/css/platform-mobile.css">
+      <link type="text/css" rel="stylesheet" href="https://idelhost.com.br/nutra-apagar/teste/template-mobile.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css" integrity="sha256-oKeZ+pa2BdORnYpcNXHicQ7ah1L7QhVfA0oS7BN8+Ws=" crossorigin="anonymous">
+    <link href="https://idelhost.com.br/nutra-apagar/css/skin-base.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://www.corpoevidashop.com.br/css/quicksearch.1551873271.css">
+<script type="text/javascript" src="/jquery-1.10.1.min.js"></script>
+<script src="/LojaSite.js?cccfc=4.5"></script>
+    <link href="https://idelhost.com.br/nutra-apagar/css/wave.css" rel="stylesheet">
+<!-- Includes CSS -->
+<script>FCLib$.loadAsyncCSS('<PathTo file="htm/css/jquery_ui.css">');</script>
+<!--[if IE]><style type="text/css">.ui-autocomplete-category{margin-top: -2px}</style><![endif]-->
 <!-- Includes Javascript -->
-<script src='<PathTo file="htm/js/mbhstore-lib.js">'></script>
+<script src='<PathTo file="htm/jurosparcelas.js">'></script>
+<script src='<PathTo file="htm/lojalib.js">'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+<script src='<PathTo file="htm/js/autosuggesttbar.js">'></script>
+<script src='<PathTo file="htm/js/autosuggest.js">'></script>
+<script src='<PathTo file="htm/js/scrolltothetop.js">'></script>
+<script src='<PathTo file="htm/js/tinynav.js">'></script>
+<script>iItensCesta=<QtdCesta>;</script>
+</head>
+<style>
+    @media screen and (max-width: 640px) {
 
-<header>
-  <div class="amp-top-bar container">
-    <div class="amp-header-container">
-      <div class="amp-header-btn">
-        <!-- <button on='tap:sidebar.toggle' class="amp-sidebar-btn"> -->
-        <button class="amp-sidebar-btn">
-          <img src="<PathTo file="images/mbhiconmenuopen.svg">" />
-        </button>
-      </div>
-      <div class=amp-header-logo>
-        <a href="<PathAMP url="/">"><img src="<PathTo file="images/amplogotopo.png">" /></a>
-      </div>
-      <div class="amp-header-cart">
-        <a href="<url-add-product>"><img src="<PathTo file="images/ampiconcart.svg">"></a>
-      </div>
-    </div>
-    <div class="amp-search-container speech">
-      <form name="TopSearchForm" id="autocomplete-form" method="GET" target="_top" action="<url-prod>">
-        <input type="hidden" name="<par-typed>" value="true">
-        <input type="text" id="autocomplete" value="<SearchText>" name="<par-text>" class="InputTextBusca amp-search-input" placeholder="Digite sua busca aqui">
-        <div class="amp-search-btn" id="amp-search-btn-size">
-          <img src="<BaseLoja>images/amp-search.svg" onclick="sF$.fnSearchSubmit(document.TopSearchForm);" id="voiceSearchMGlass" width="22" height="22" title="Buscar">
-          <img class="header-speech-icon" id="voiceSearch" onclick="sF$.fnStartDictation()" src="<BaseLoja>images/icon-speech-mobile.svg?cccfc=1" width="24" height="24" alt="Fale" />
+.whatsapp {
+  text-align: center;
+}
+    }
+</style>
+
+    <body class="cev">
+        <header class="topo">
+            <div class="container">
+                <button class="bto_menu_mobile" onclick="mostraMenu()">
+                    <span class="icone">Menu</span>
+                </button>
+
+                <div class="logo">
+                    <a href="#" title="">NutraFit</a>
+                </div>
+
+                <a href="/add-product.ehc" rel="nofollow">
+                    <button class="bto_carrinho_topo">
+                        <span class="icone">Meu Carrinho</span>
+                    </button>
+                </a>
+
+            <nav class="menu_geral" id="menu_geral">
+                <a id="subir_menu" rel="nofollow"></a>
+                <div class="container">
+                    <ul>
+                        <li>
+                            <div class="dropdown drop_categorias">
+                                <a id="menu_categorias" href="#subir_menu" onclick="mostraSubMenu('categoria')" rel="nofollow">Categorias
+                            <span class="seta"></span></a>
+
+                                <div class="dropdown-menu" aria-labelledby="menu_categorias">
+                                    <span class="seta"></span>
+                                    <ul>
+                                        <li><a href="#"> Bloqueador de gordura</a></li>
+                                        <li><a href="#">Diurético Natural</a></li>
+                                        <li><a href="#">L-Carnitina</a></li>
+                                        <li><a href="#">Termogênico</a></li>
+                                        <li><a href="#">Carboidrato</a></li>
+                                        <li><a href="#">Gel energético</a></li>
+                                        <li><a href="#">Recovery</a></li>
+                                        <li><a href="#">Albumina</a></li>
+                                        <li><a href="#">BCAA e HMB</a></li>
+                                        <li><a href="#">Creatina</a></li>
+                                        <li><a href="#">Glutamina</a></li>
+                                        <li><a href="#">Hipercalórico</a></li>
+                                        <li><a href="#">Pré-Hormonal</a></li>
+                                        <li><a href="#">Pré-Treino</a></li>
+                                        <li><a href="#">Barras de Proteína</a></li>
+                                        <li><a href="#">Caseína</a></li>
+                                        <li><a href="#">Proteína da Carne</a></li>
+                                        <li><a href="#">Proteína Vegetal</a></li>
+                                        <li><a href="#">Whey Protein Concentrada</a></li>
+                                        <li><a href="#">Whey Protein Hidrolisada</a></li>
+                                        <li><a href="#">Whey Protein Isolada</a></li>
+                                        <li><a href="#">Articulações</a></li>
+                                        <li><a href="#">Colágeno</a></li>
+                                        <li><a href="#">Enzimas</a></li>
+                                        <li><a href="#">Ômegas e EFA</a></li>
+                                        <li><a href="#">Pasta de amendoim</a></li>
+                                        <li><a href="#">Vitaminas e Minerais</a></li>
+                                        <li><a href="#">Coqueteleiras e Cia</a></li>
+                                        <li><a href="#">Corporal</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                                                <li>
+                            <div class="dropdown drop_objetivos">
+                                <a id="menu_objetivos" href="#subir_menu" onclick="mostraSubMenu('objetivos')" rel="nofollow">Objetivos
+                            <span class="seta"></span></a>
+
+                                <div class="dropdown-menu" aria-labelledby="menu_objetivos">
+                                    <div class="seta"></div>
+                                    <div class="conteudo">
+
+                                        <div class="coluna">
+                                            <strong class="icone_hipertrofia"></strong>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                massa muscular
+                                            </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                resistencia e energia
+                                            </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                 emagrecimento e definição
+                                            </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                saúde e bem estar
+                                            </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown drop_promocoes">
+                                <a id="menu_promocoes" href="#subir_menu" onclick="mostraSubMenu('promocoes')" rel="nofollow">Promoções
+                            <span class="seta"></span></a>
+
+                                <div class="dropdown-menu" aria-labelledby="menu_promocoes">
+                                    <div class="seta"></div>
+                                    <div class="conteudo">
+                                        <span>aproveite as <strong>Ofertas e Promoções exclusivas</strong></span>
+                                        <div class="coluna">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" rel="nofollow">
+                                                        <em class="icone_cg"></em> COMPRE E GANHE
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" rel="nofollow">
+                                                        <em class="icone_cb"></em> COMBOS PROMOCIONAIS
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="coluna">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" rel="nofollow">
+                                                        <em class="icone_dv"></em> ATÉ 50% OFF
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" rel="nofollow">
+                                                        <em class="icone_lc"></em> OUTLET
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="destaques">
+                        <li class="verde">
+                            <a href="#" rel="nofollow">
+                            Compre &amp; Ganhe <span class="seta"></span>
+                        </a>
+                        </li>
+                        <li class="amarelo">
+                            <a href="#" rel="nofollow">
+                            Combos <span class="seta"></span>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+<body onload="self.focus();" class="FCHome">
+
+    <link rel="stylesheet" href="https://idelhost.com.br/nutra-apagar/css/wave.css">
+    <!--[if IE]><style type="text/css">.ui-autocomplete-category{margin-top: -2px}</style><![endif]-->
+    <!-- Includes Javascript -->
+    <!-- End: Toolbar -->
+    <div class="MainContainer">
+            <div class="col-small-12 col-medium-6 col-large-6 col-xlarge-6">
+      <form name="TopSearchForm" method="GET" id="autocomplete-form" action="/listaprodutos.asp">
+<input type="hidden" name="idloja" value="<IDLojaNum>">
+<input type="hidden" name="digitada" value="true">
+<div class="HeaderSearchFC">
+<div id="DivSearch" class="collapse show">
+<div class="col-small-9 col-medium-9 col-large-9 col-xlarge-9">
+<input type="text" id="autocomplete" name="Texto" class="InputTextBusca" placeholder="Digite sua busca aqui">
+</div>
+<div class="col-small-3 col-medium-3 col-large-3 col-xlarge-3 speech">
+                                <a href="#search" class="btn1 btn-sent HeaderIconSearchButtonFC"> <img class="header-speech-icon" id="voiceSearch" onclick="fnStartDictation()" src="https://www.nutrafitsuplementos.com.br/lojas/00038536/images/icon-speech.svg?cccfc=1" width="30" height="30" alt="Fale"> <span class="HeaderSerachIMGIconFC" onclick="sF$.fnSearchSubmit(document.TopSearchForm);"><img id="voiceSearchMGlass" src="https://www.nutrafitsuplementos.com.br/lojas/00038536/images/iconsearch.svg" width="25" height="25" alt="Buscar" title="Buscar"></span> </a>
+
+</div>
+</div>
+</div>
+</form>
+            </div>
+            <div>
+                <div class="whatsapp">
+                    <a href="https://web.whatsapp.com/send?phone=5511992201411&amp;text=Ol%C3%A1!%20Nutrafit,%20pode%20me%20ajudar?" target="_blank" style="color:#ff8040;">
+                        <div style="color:#ff8040;"> <img width="22" height="22" alt="Whatsapp" style="opacity: 1;" src="https://i.imgur.com/sbKoASh.png"> <strong style="color:#ff8040;">&nbsp;(11)</strong> <strong>99220-1411</strong></div>
+                    </a>
+                </div>
+            </div>
+            <!-- Begin Cart -->
+            <!-- End Cart -->
         </div>
-      </form>
-    </div>
-  </div>
-</header>
 
-<section class="container amp-main">
+</body>
